@@ -1,0 +1,12 @@
+export default {
+  // FP_SLIDER
+  FP_INIT: 'FP_INIT',
+  FP_UP: 'FP_UP',
+  FP_DOWN: 'FP_DOWN',
+  FP_WHEEL: 'FP_WHEEL',
+
+  // FP_SLIDER AFTER SCROLL
+  FP_UP_AFTER: 'FP_UP_AFTER',
+  FP_DOWN_AFTER: 'FP_DOWN_AFTER',
+
+};
