@@ -19,7 +19,7 @@ export default class FP_SLIDER {
 
     this._delay = config.delay || 1000;
 
-    // this.init();
+    this.init();
   }
   _addState(i) {
     if (this._destroyFlag) return;
@@ -101,4 +101,3 @@ let fpSlider = new FP_SLIDER({
   delay: 1500
 });
 // fpSlider.disablemMousewheel = true;
-fpSlider.init();
