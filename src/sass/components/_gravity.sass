@@ -2,7 +2,42 @@
 	position: relative
 	width: 100%
 	height: 100vh
-	background-image: radial-gradient(51% -105%, #FAFDF9 100%, #A79BB2 100%)
+	overflow: hidden
+	&:before
+		position: absolute
+		content: "" 
+		top: 0
+		left: 0
+		width: 100vw
+		height: 100vw
+		z-index: 2
+		background-image: radial-gradient(circle at top, rgba(#FAFDF9,1) 0%, rgba(#A79BB2,0) 64%)
+	&:after
+		position: absolute
+		content: "" 
+		top: 0
+		left: 0
+		width: 100vw
+		height: 100vh
+		z-index: -1
+		background-color: #A79BB2
+.lines
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+	min-width: 100%
+	max-width: 200%
+	height: 100%
+
+.logo
+	position: absolute
+	top: 50%
+	left: 50%
+	margin: -34px 0 0 -527px
+	width: 1055px
+	height: 68px
+		
 
 .dust
 	position: absolute
