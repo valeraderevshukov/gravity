@@ -48,11 +48,11 @@ import { WIN } from '../constants';
 
     let self = this;
 
-    const setRadius = value = {
+    const setRadius = value => {
       self.radius = value;
-    }
+    };
 
-    const resize = event = {
+    const resize = event => {
       W = $(window).width();
       self.x = Math.random() * W;
       if (W > 600) {
@@ -60,7 +60,7 @@ import { WIN } from '../constants';
       } else {
         setRadius(GET_RANDOM(1, 8));
       }
-    }
+    };
           
     resize();
     WIN.on('resize', resize);
