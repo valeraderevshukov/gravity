@@ -1,0 +1,34 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+// FuturaFuturis
+@font-face
+	+fontdefault(normal, 800, 'FuturaFuturis')
+	+fontpath('FuturaFuturis-Extrabold', 'FuturaFuturis-Extrabold', FuturaFuturis-Extrabold)
+@font-face
+	+fontdefault(italic, 800, 'FuturaFuturis')
+	+fontpath('FuturaFuturis-Extrabold', 'FuturaFuturis-Extrabold', FuturaFuturis-Extrabold)
+	
+@font-face
+	+fontdefault(normal, 700, 'FuturaFuturis')
+	+fontpath('FuturaFuturis-Bold', 'FuturaFuturis-Bold', FuturaFuturis-Bold)
+@font-face
+	+fontdefault(italic, 700, 'FuturaFuturis')
+	+fontpath('FuturaFuturis-BoldItalic', 'FuturaFuturis-BoldItalic', FuturaFuturis-BoldItalic)
+
+@font-face
+	+fontdefault(normal, 500, 'FuturaFuturis')
+	+fontpath('FuturaFuturis-Medium', 'FuturaFuturis-Medium', FuturaFuturis-Medium)
+@font-face
+	+fontdefault(italic, 500, 'FuturaFuturis')
+	+fontpath('FuturaFuturis-MediumItalic', 'FuturaFuturis-MediumItalic', FuturaFuturis-Medium)
+
+@font-face
+	+fontdefault(normal, 300, 'FuturaFuturis')
+	+fontpath('FuturaFuturis-Light', 'FuturaFuturis-Light', FuturaFuturis-Light)
+	

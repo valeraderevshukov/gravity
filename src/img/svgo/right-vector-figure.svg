@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="1143px" viewBox="0 0 113 1143" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>white col 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.00404291%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#EFF6F7" offset="0%"></stop>
+            <stop stop-color="#D8E0E1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="2.33239339%" x2="75.008802%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#ECE2F6" offset="0%"></stop>
+            <stop stop-color="#D7CDE2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="white-col-7">
+            <polygon id="Rectangle_Left_Isometric" fill="url(#linearGradient-1)" points="56.471814 1142.45161 0 1142.45161 0 28.2740857 56.471814 56.5481714"></polygon>
+            <polygon id="Rectangle_Right_Isometric" fill="url(#linearGradient-2)" points="56.471814 1142.45161 112.943628 1142.45161 112.943628 28.2740857 56.471814 56.5481714"></polygon>
+            <polygon id="Rectangle_Top_Isometric" fill="#FAFDF9" points="0 28.2740857 56.471814 0 112.943628 28.2740857 56.471814 56.5481714"></polygon>
+        </g>
+    </g>
+</svg>

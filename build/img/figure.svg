@@ -1,0 +1,98 @@
+<svg data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="1307" viewBox="0 0 1440 1307">
+    <defs>
+        <linearGradient id="b" x1="424.97" y1="1120.75" x2="424.97" y2="1120.37" gradientTransform="matrix(46.07 0 0 -902.46 -18882.12 1011863.82)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f0f2ef"/>
+            <stop offset="1" stop-color="#dedfdd"/>
+        </linearGradient>
+        <linearGradient id="a" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -902.46 -18836.05 1011863.82)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#d4cbdc"/>
+            <stop offset="1" stop-color="#a79bb2"/>
+        </linearGradient>
+        <linearGradient id="c" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -880.04 -18927.93 986763.63)" xlink:href="#a"/>
+        <linearGradient id="d" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -880.04 -18881.86 986763.63)" xlink:href="#a"/>
+        <linearGradient id="e" x1="424.97" y1="1120.75" x2="424.97" y2="1120.37" gradientTransform="matrix(46.07 0 0 -857.24 -18973.35 961226.67)" xlink:href="#b"/>
+        <linearGradient id="f" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -857.24 -18927.29 961226.67)" xlink:href="#a"/>
+        <linearGradient id="g" x1="424.97" y1="1120.74" x2="424.97" y2="1120.36" gradientTransform="matrix(46.07 0 0 -827.7 -19019.16 928143.23)" xlink:href="#b"/>
+        <linearGradient id="h" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -827.7 -18973.1 928143.23)" xlink:href="#a"/>
+        <linearGradient id="i" x1="424.97" y1="1120.74" x2="424.97" y2="1120.36" gradientTransform="matrix(46.11 0 0 -778.05 -19035.67 872544.35)" xlink:href="#b"/>
+        <linearGradient id="j" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.11 0 0 -778.05 -18989.56 872544.35)" xlink:href="#a"/>
+        <linearGradient id="k" x1="424.97" y1="1120.73" x2="424.97" y2="1120.35" gradientTransform="matrix(46.11 0 0 -755.37 -18990.36 847143.07)" xlink:href="#b"/>
+        <linearGradient id="l" x1="424.97" y1="1120.71" x2="424.97" y2="1120.25" gradientTransform="matrix(46.11 0 0 -755.37 -18944.25 847143.07)" xlink:href="#a"/>
+        <linearGradient id="m" x1="424.97" y1="1120.73" x2="424.97" y2="1120.28" gradientTransform="matrix(46.07 0 0 -908.93 -18790.37 1019117.48)" xlink:href="#a"/>
+        <linearGradient id="n" x1="424.97" y1="1120.73" x2="424.97" y2="1120.28" gradientTransform="matrix(46.07 0 0 -908.93 -18744.3 1019117.48)" xlink:href="#a"/>
+        <linearGradient id="o" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -886.25 -18745.06 993716.19)" xlink:href="#a"/>
+        <linearGradient id="p" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -886.25 -18698.99 993716.19)" xlink:href="#a"/>
+        <linearGradient id="q" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -828.48 -18835.54 929013.9)" xlink:href="#a"/>
+        <linearGradient id="r" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -828.48 -18789.47 929013.9)" xlink:href="#a"/>
+        <linearGradient id="s" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -805.67 -18790.11 903476.94)" xlink:href="#a"/>
+        <linearGradient id="t" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -805.41 -18744.16 903180.9)" xlink:href="#a"/>
+        <linearGradient id="u" x1="424.97" y1="1120.74" x2="424.97" y2="1120.36" gradientTransform="matrix(46.07 0 0 -782.87 -18836.19 877939.97)" xlink:href="#b"/>
+        <linearGradient id="v" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -782.87 -18790.12 877939.97)" xlink:href="#a"/>
+        <linearGradient id="w" x1="424.97" y1="1120.73" x2="424.97" y2="1120.35" gradientTransform="matrix(46.07 0 0 -753.06 -18881.99 844555.37)" xlink:href="#b"/>
+        <linearGradient id="x" x1="424.97" y1="1120.71" x2="424.97" y2="1120.25" gradientTransform="matrix(46.07 0 0 -753.32 -18835.92 844851.41)" xlink:href="#a"/>
+    </defs>
+    <title>
+        figure
+    </title>
+    <path fill="none" d="M0 0h1440v1024H0z"/>
+    <g data-name="Rectangle Isometric-Copy-2">
+        <path data-name="Rectangle Left Isometric" fill="url(#b)" d="M719.11 1307h-46.07V404.54l46.07 23.07V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#a)" d="M719.11 1307h46.07V404.54l-46.07 23.07V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M673.04 404.54l46.07-23.06 46.07 23.06-46.07 23.07-46.07-23.07z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-3">
+        <path data-name="Rectangle Left Isometric" fill="url(#c)" d="M673.3 1307h-46.07V426.96l46.07 23.06V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#d)" d="M673.3 1307h46.07V426.96l-46.07 23.06V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M627.23 426.96l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-4">
+        <path data-name="Rectangle Left Isometric" fill="url(#e)" d="M627.88 1307h-46.07V449.76l46.07 23.06V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#f)" d="M627.88 1307h46.07V449.76l-46.07 23.06V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M581.81 449.76l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-5">
+        <path data-name="Rectangle Left Isometric" fill="url(#g)" d="M582.07 1307H536V479.3l46.07 23.07V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#h)" d="M582.07 1307h46.07V479.3l-46.07 23.07V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M536 479.3l46.07-23.06 46.07 23.06-46.07 23.07L536 479.3z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-7">
+        <path data-name="Rectangle Left Isometric" fill="url(#i)" d="M582.11 1307H536V528.95l46.11 23.08V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#j)" d="M582.11 1307h46.11V528.95l-46.11 23.08V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M536 528.95l46.11-23.09 46.11 23.09-46.11 23.08L536 528.95z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-12">
+        <path data-name="Rectangle Left Isometric" fill="url(#k)" d="M627.42 1307h-46.11V551.63l46.11 23.09V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#l)" d="M627.42 1307h46.1V551.63l-46.1 23.09V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M581.31 551.63l46.11-23.09 46.1 23.09-46.1 23.09-46.11-23.09z"/>
+    </g>
+    <g data-name="1">
+        <path data-name="Rectangle Left Isometric" fill="url(#m)" d="M810.86 1307h-46.07V398.07l46.07 23.06V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#n)" d="M810.86 1307h46.07V398.07l-46.07 23.06V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M764.79 398.07L810.86 375l46.07 23.07-46.07 23.06-46.07-23.06z"/>
+    </g>
+    <g data-name="2">
+        <path data-name="Rectangle Left Isometric" fill="url(#o)" d="M856.17 1307H810.1V420.75l46.07 23.06V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#p)" d="M856.17 1307h46.07V420.75l-46.07 23.06V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M810.1 420.75l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-11">
+        <path data-name="Rectangle Left Isometric" fill="url(#q)" d="M765.7 1307h-46.07V478.52l46.07 23.07V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#r)" d="M765.7 1307h46.07V478.52l-46.07 23.07V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M719.63 478.52l46.07-23.06 46.07 23.06-46.07 23.07-46.07-23.07z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-8">
+        <path data-name="Rectangle Left Isometric" fill="url(#s)" d="M811.12 1307h-46.07V501.33l46.07 23.06V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#t)" d="M811.01 1307h46.07V501.59l-46.07 23.07V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M765.05 501.33l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-9">
+        <path data-name="Rectangle Left Isometric" fill="url(#u)" d="M765.04 1307h-46.06V524.13l46.06 23.07V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#v)" d="M765.04 1307h46.07V524.13l-46.07 23.07V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M718.98 524.13l46.06-23.07 46.07 23.07-46.07 23.07-46.06-23.07z"/>
+    </g>
+    <g data-name="Rectangle Isometric-Copy-10">
+        <path data-name="Rectangle Left Isometric" fill="url(#w)" d="M719.24 1307h-46.07V553.94l46.07 23.07V1307z"/>
+        <path data-name="Rectangle Right Isometric" fill="url(#x)" d="M719.24 1307h46.07V553.68l-46.07 23.06V1307z"/>
+        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M673.17 553.68l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+    </g>
+</svg>

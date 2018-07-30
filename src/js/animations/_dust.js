@@ -2,6 +2,8 @@ import { GET_RANDOM } from './../utils';
 import { WIN } from '../constants';
 
 (() => {
+  const parent = $('.js-gravity');
+  const canvasWindow = $('.js-dust');
   $(() => {
     let H, Particle, W, animateParticles, canvas, clearCanvas, colorArray, createParticles, ctx, drawParticles, initParticleSystem, particleCount, particles, updateParticles;
     Particle = function() {
@@ -113,8 +115,8 @@ import { WIN } from '../constants';
     particles = [];
     colorArray = ['rgba(255,255,255,0.2)'];
     W = window.innerWidth;
-    H = $('.js-gravity').height();
-    canvas = $('.js-dust').get(0);
+    H = parent.height();
+    canvas = canvasWindow.get(0);
     canvas.width = W;
     canvas.height = H;
     ctx = canvas.getContext('2d');

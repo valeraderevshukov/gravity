@@ -1,1 +1,39 @@
-<p>Hello from partials/_header.html</p>
+<!-- begin header -->
+<header class="header js-header">
+	<div class="header__inner inner">
+		<!-- begin logo -->
+		<div class="header-logo">
+			<a href="#" class="header-logo__link">
+				<h1 class="header-logo__text">GRAVITY AGENCY</h1>
+			</a>
+		</div>
+		<!-- end logo -->
+		<!-- begin nav -->
+		<nav class="nav">
+			<ul class="nav__list">cases
+				{% for item in [{
+					href: "cases",
+					text: 'CASES'
+				},
+				{
+					href: "about",
+					text: 'about'
+				},
+				{
+					href: "contacts",
+					text: 'CoNTACTS'
+				}] %}
+				<li class="nav__item"><a href="{{ item.href }}" class="nav__link js-nav-link">{{ item.text }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<!-- end nav -->
+		<!-- begin lang -->
+		<ul class="lang">
+			<li class="lang__item is-active"><a href="#" class="lang__link">en</a></li>
+			<li class="lang__item"><a href="#" class="lang__link">ru</a></li>
+		</ul>
+		<!-- end lang -->
+	</div>
+</header>
+<!-- end header -->

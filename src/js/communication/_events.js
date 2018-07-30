@@ -1,4 +1,8 @@
 export default {
+  // LOADERS
+  DOC_READY: 'DOC_READY',
+  LOADER_COMPLATE: 'LOADER_COMPLATE',
+
   // FP_SLIDER
   FP_INIT: 'FP_INIT',
   FP_UP: 'FP_UP',
@@ -9,4 +13,6 @@ export default {
   FP_UP_AFTER: 'FP_UP_AFTER',
   FP_DOWN_AFTER: 'FP_DOWN_AFTER',
 
+  // POPUP
+  POPUP_CLOSE: 'POPUP_CLOSE'
 };

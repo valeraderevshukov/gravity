@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1911px" height="1214px" viewBox="0 0 1911 1214" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>lines</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="lines">
+            <polyline id="Line-3" stroke="#DB2727" points="0.5 139.5 535.5 1210.5 1070.05411 139.5"></polyline>
+            <path d="M35.5,1213.5 L641.5,0.5" id="Line-5" stroke="#E62424"></path>
+            <polyline id="Line-4" stroke="#D61B1B" points="720.5 140.5 1254.5 1209.5 1789.94769 139.991699"></polyline>
+            <polyline id="Line-6" stroke="#FF0000" points="840.5 140.5 1374.5 1207.5 1910.17709 139.156013"></polyline>
+        </g>
+    </g>
+</svg>

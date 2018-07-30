@@ -1,0 +1,25 @@
+[data-stagger]
+	position: relative
+	opacity: 0
+	display: block
+$scale: 1.5
+[data-stagger="left"]
+	transform: translateX(-400px) scale($scale)
+[data-stagger="right"]
+	transform: translateX(400px) scale($scale)
+[data-stagger="up"]
+	transform: translateY(-400px) scale($scale)
+[data-stagger="bottom"]
+	transform: translateY(400px) scale($scale)
+
+[data-stagger="up-left"]
+	transform: translate(-400px, -400px) scale($scale)
+[data-stagger="bottom-left"]
+	transform: translate(-400px, 400px) scale($scale)
+[data-stagger="up-right"]
+	transform: translate(900px, -900px) scale($scale)
+[data-stagger="bottom-right"]
+	transform: translate(600px, 600px) scale($scale)
+	
+[data-stagger="from-down"]
+	transform: translateY(140px)

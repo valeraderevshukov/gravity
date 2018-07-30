@@ -1,0 +1,41 @@
+.about
+	position: relative
+	float: right
+	padding: 75px
+	height: 100%
+	padding-top: calc(100px + (180 - 100)*((100vh - 750px)/(960 - 750)))
+	width: 645px
+	+css-lock(14,20,1024,1440)
+	&__content
+		max-width: 432px 
+	&__title
+		margin-bottom: 2vh
+	&__info
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 300px
+		min-height: 300px
+		+css-lock(250,300,1024,1440,width)
+		+css-lock(250,300,1024,1440,min-height)
+		font-size: 30px
+		+css-lock(25,30,1024,1440)
+		color: $white
+		letter-spacing: 0
+		text-align: center
+		line-height: 1.3333
+		background-color: $black-l 
+		display: table
+		+hover
+			.icon
+				transform: translateX(5px)
+	&__info-inner
+		padding: 0 34px
+		vertical-align: middle
+		display: table-cell
+		.icon
+			margin-left: 4px
+			fill: $white
+			vertical-align: middle
+			font-size: 18px 
+			transition: transform .3s

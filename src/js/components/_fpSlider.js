@@ -15,7 +15,8 @@ export default class FP_SLIDER {
     this._destroyFlag = false;
     this._scrollTimeout = null;
     this._direction = '';
-    this.disablemMousewheel = false;
+    this.disableMousewheel = false;
+    this.disableMousewheelDelay = config.disableMousewheelDelay || 1500;
 
     this._delay = config.delay || 1000;
 
@@ -37,7 +38,7 @@ export default class FP_SLIDER {
       : this.next();
   }
   prev() {
-    if (this._index >= 1) this._index--;
+    if (this._index >= 2) this._index--;
     if (this._indexLast !== this._index) {
       this._direction = EVENT.FP_UP;
       this._addState(this._index, this._direction);
@@ -64,9 +65,9 @@ export default class FP_SLIDER {
     let that = this;
     if (this._destroyFlag) return;
     this._container.on('mousewheel', event => {
-      if (!this.disablemMousewheel) {
-        OBSERVER.ON_FIRE(EVENT.FP_WHEEL, this._index);
+      if (!this.disableMousewheel) {
         that._trigger.call(this, event);
+        OBSERVER.ON_FIRE(EVENT.FP_WHEEL, this._index, this._direction);
       }
     });
   }
@@ -79,7 +80,7 @@ export default class FP_SLIDER {
     clearTimeout(this._scrollTimeout);
     this._scrollTimeout = setTimeout(function() {
       that._scrollFlag = true;
-    }, 1000);
+    }, this.disableMousewheelDelay);
   }
   init() {
     this._destroyFlag = false;
@@ -94,10 +95,3 @@ export default class FP_SLIDER {
     this._destroyFlag = true;
   }
 };
-
-let fpSlider = new FP_SLIDER({
-  container: '.js-fp-slider',
-  slide: '[data-fp-slide]',
-  delay: 1500
-});
-// fpSlider.disablemMousewheel = true;

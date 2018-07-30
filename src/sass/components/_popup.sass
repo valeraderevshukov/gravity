@@ -1,0 +1,102 @@
+.popup
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 5
+	padding: 30px
+	visibility: hidden
+	overflow: auto
+	+vertical
+	&::-webkit-scrollbar
+	    width: 5px
+	&::-webkit-scrollbar-thumb
+		background-color: $gray 
+	&.is-active
+		visibility: visible
+	&__overlay
+		position: fixed
+		top: 0
+		left: 0
+		bottom: 0
+		width: 100%
+		opacity: 0
+		background-color: rgba(25,25,38,0.30)
+	&__inner
+		position: relative
+		width: 100%
+		max-width: 1200px
+		overflow: hidden
+		vertical-align: middle
+		display: inline-block
+	&__close
+		position: absolute
+		top: 0
+		right: 0
+		width: 50px
+		height: 50px
+		color: $white
+		font-size: 0
+		z-index: 1
+		opacity: 0
+		background-color: $black-l 
+		.icon
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -9px 0 0 -9px
+			font-size: 18px 
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $white 
+		transform: scaleY(0)
+	&__triangle
+		position: absolute
+		top: 60%
+		left: 51.5%
+		opacity: 0.2
+		stroke-dasharray: 2500
+		stroke-dashoffset: 2500
+	&__triangle-blur
+		top: 50%
+		left: 59%
+		opacity: 0.1
+		// filter: blur(8px)
+		svg
+			transform: rotate(180deg)
+			stroke-dasharray: 2500
+			stroke-dashoffset: 2500
+	&__triangle,
+	&__triangle-blur
+		position: absolute
+		transform: translate(-50%, -50%)
+	&__content
+		position: relative
+		padding: 100px 50px 180px
+		+css-lock(30,100,1024,1440,padding-top)
+		+css-lock(30,180,1024,1440,padding-bottom)
+		color: $gray 
+		font-size: 20px
+	&__title
+		font-family: $Futuras
+		+f(30px,300,1.6)
+		color: $gray
+		letter-spacing: 0
+	&__email
+		color: #ACA1B7 
+		font-size: 40px
+		letter-spacing: 0
+		line-height: 1.25
+		transition: border-color .3s
+		border-bottom: 1px solid transparent 
+		+hover
+			border-color: currentColor
+	&__form
+		margin: 100px auto 0
+		+css-lock(20,100,1024,1440,margin-top)
+		max-width: 372px

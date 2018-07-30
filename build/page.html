@@ -13,82 +13,295 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="header__inner inner">
+          <!-- begin logo -->
+          <div class="header-logo">
+            <a href="#" class="header-logo__link">
+              <h1 class="header-logo__text">GRAVITY AGENCY</h1>
+            </a>
+          </div>
+          <!-- end logo -->
+          <!-- begin nav -->
+          <nav class="nav">
+            <ul class="nav__list">cases
+              <li class="nav__item"><a href="cases" class="nav__link js-nav-link">CASES</a></li>
+              <li class="nav__item"><a href="about" class="nav__link js-nav-link">about</a></li>
+              <li class="nav__item"><a href="contacts" class="nav__link js-nav-link">CoNTACTS</a></li>
+            </ul>
+          </nav>
+          <!-- end nav -->
+          <!-- begin lang -->
+          <ul class="lang">
+            <li class="lang__item is-active"><a href="#" class="lang__link">en</a></li>
+            <li class="lang__item"><a href="#" class="lang__link">ru</a></li>
+          </ul>
+          <!-- end lang -->
+        </div>
+      </header>
+      <!-- end header -->
       <!-- begin gravity -->
-      <div class="gravity js-gravity"> <svg class="lines" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<defs>
-				<filter x="-0.6%" y="-0.6%" width="101.3%" height="101.3%" filterUnits="objectBoundingBox" id="filter-1">
-					<feGaussianBlur stdDeviation="2.98270089" in="SourceGraphic"></feGaussianBlur>
-				</filter>
-				<filter x="-0.9%" y="-0.9%" width="101.8%" height="101.8%" filterUnits="objectBoundingBox" id="filter-2">
-					<feGaussianBlur stdDeviation="2.98270089" in="SourceGraphic"></feGaussianBlur>
-				</filter>
-			</defs>
-			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				<g stroke="#FFFFFF">
-					<g>
-						<g transform="translate(-115.000000, -160.000000)">
-							<polygon filter="url(#filter-1)" points="742.5 0 1485 1485 0 1485"></polygon>
-							<polygon transform="translate(635.000000, 675.000000) scale(1, -1) translate(-635.000000, -675.000000) " points="635 140 1170 1210 100 1210"></polygon>
-							<polygon transform="translate(1355.000000, 675.000000) scale(1, -1) translate(-1355.000000, -675.000000) " points="1355 140 1890 1210 820 1210"></polygon>
-							<polygon filter="url(#filter-2)" transform="translate(1475.000000, 675.000000) scale(1, -1) translate(-1475.000000, -675.000000) " points="1475 140 2010 1210 940 1210"></polygon>
-						</g>
-					</g>
-				</g>
-			</g>
-		</svg>
-        <!-- begin logo -->
-        <div class="logo js-logo"> <svg width="72px" height="75px" viewBox="0 0 72 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			    <defs>
-			        <path d="M225.415,310.4 L254.575,310.4 C254.575,318.68 252.325,326.06 247.645,332.45 C243.055,338.84 234.775,342.8 224.245,342.8 C214.435,342.8 206.425,339.74 200.395,333.71 C194.365,327.68 191.305,319.67 191.305,309.77 C191.305,299.69 194.185,291.59 200.035,285.47 C205.885,279.26 213.445,276.2 222.625,276.2 C234.775,276.2 244.045,281.06 250.435,290.69 L245.755,294.11 C239.905,285.56 232.165,281.24 222.535,281.24 C215.155,281.24 209.215,283.94 204.625,289.43 C200.035,294.83 197.785,301.58 197.785,309.77 C197.785,318.05 200.215,324.8 204.985,330.02 C209.755,335.15 216.145,337.76 224.065,337.76 C231.355,337.76 237.115,335.51 241.435,331.1 C245.845,326.6 248.005,321.38 248.095,315.44 L225.415,315.44 L225.415,310.4 Z" id="path-g"></path>
-			        <filter x="-11.1%" y="-7.5%" width="122.1%" height="121.0%" filterUnits="objectBoundingBox" id="filter-g">
-			            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-			            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
-			            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
-			            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
-			            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-			            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.167515851 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-			        </filter>
-			    </defs>
-			    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
-			        <g transform="translate(-186.000000, -274.000000)" fill="black">
-			            <g>
-			                <use filter="url(#filter-g)" xlink:href="#path-g"></use>
-			                <use xlink:href="#path-g"></use>
-			            </g>
-			        </g>
+      <div class="gravity js-gravity">
+        <div class="gravity__arrow js-gravity-arrow"> <svg width="51" height="27" viewBox="0 0 51 27" xmlns="http://www.w3.org/2000/svg">
+			    <title>arrow</title>
+			    <g fill="none" fill-rule="evenodd">
+			        <path d="M2 2l22.492 23L49 2" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 			    </g>
-			</svg> <svg width="45px" height="71px" viewBox="0 0 45 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			    <title>r</title>
-			    <defs>
-			        <path stroke="#fff" stroke-width="4" d="M0.535,63 L0.535,0 L17.365,0 C19.525,0 21.505,0.09 25.195,1.44 C27.085,2.07 28.705,2.97 30.055,4.14 C32.845,6.3 35.275,10.98 35.275,17.01 C35.275,21.51 33.745,25.38 30.685,28.53 C27.715,31.68 22.585,33.48 15.475,33.93 L37.795,63 L30.595,63 L8.995,34.02 L6.655,34.02 L6.655,63 L0.535,63 Z M6.655,28.98 L12.955,28.98 C23.665,28.98 28.975,25.02 28.975,17.01 C28.975,11.97 27.355,8.64 24.385,7.11 C21.415,5.58 18.625,5.04 14.395,5.04 L6.655,5.04 L6.655,28.98 Z" id="path-1"></path>
-			        <filter x="-18.8%" y="-7.9%" width="137.6%" height="122.2%" filterUnits="objectBoundingBox" id="filter-2">
-			            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-			            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-			            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
-			            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.167515851 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-			        </filter>
-			    </defs>
-			    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			        <g id="Интро" transform="translate(-384.000000, -276.000000)">
-			            <g id="r" transform="translate(387.000000, 278.000000)">
-			                <g id="Path">
-			                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-			                    <use fill-opacity="0" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-			                </g>
-			            </g>
-			        </g>
+			</svg> </div>
+        <div class="gravity-bg js-gravity-bg"></div>
+        <!-- begin lines --><svg class="lines js-lines" width="1911" height="1214" viewBox="0 0 1911 1214" xmlns="http://www.w3.org/2000/svg">
+		    <title>lines</title>
+		    <g fill="none" fill-rule="evenodd" stroke-linecap="square">
+		        <path stroke="#fff" d="M.5 139.5l535 1071 534.554-1071"/>
+		        <path d="M35.5 1213.5L641.5.5" stroke="#fff"/>
+		        <path stroke="#fff" d="M720.5 140.5l534 1069 535.448-1069.508"/>
+		        <path stroke="#fff" d="M840.5 140.5l534 1067 535.677-1068.344"/>
+		    </g>
+		</svg>
+        <!-- end lines -->
+        <!-- begin logo -->
+        <div class="logo js-logo"> <svg width="1072" height="65" viewBox="0 0 1072 65" xmlns="http://www.w3.org/2000/svg">
+			    <title>logo</title>
+			    <g stroke="#fff" stroke-width="7" fill="none" fill-rule="evenodd">
+			        <path d="M1045.846 61.5V38.062l19.7-32.975h-2.71l-16.172 27.993h-4.348l-16.172-27.993h-2.804l19.662 32.977V61.5z"/>
+			        <path d="M555.307 61.5L575.44 5.087h-3.008l-17.315 52.339h-5.323l-17.27-52.34h-3.183L549.474 61.5z"/>
+			        <path d="M870.002 61.5V6.568h19.38V5.087h-41.647v1.481h19.424V61.5z"/>
+			        <path d="M224.641 61.5h3.325L214.6 37.083l3.967-1.33c6.196-2.076 9.917-7.6 9.917-14.786 0-9.863-6.547-15.88-17.682-15.88h-21.065V61.5h2.844V37.11h19.141l12.92 24.39zM192.58 6.349h17.035c9.48 0 15.717 5.813 15.717 14.881 0 9.226-5.958 14.926-15.454 14.926H192.58V6.35z"/>
+			        <path d="M50.181 33.526H32.576v.889h15.106v4.332c-.146 10.806-8.19 18.334-19.384 18.334-13.108 0-21.288-10.34-21.288-26.122 0-15.543 7.994-25.425 21.126-25.425 8.21 0 14.7 4.26 17.77 11.552h2.851C45.761 9.075 38.057 4.03 28.095 4.03c-14.812 0-23.908 10.132-23.908 27.011 0 17.218 9.149 27.544 24.03 27.544 13.117 0 20.905-7.046 21.864-19.596.067-.875.159-5.463.1-5.463z"/>
+			        <path d="M404.294 61.5h2.92L386.846 5.087h-5.72L360.758 61.5h2.744l5.8-17.139h29.191l5.801 17.139zM381.26 8.634h5.278l11.826 34.817h-28.93l11.826-34.817z"/>
+			        <path d="M713.737 61.5V5.087h-2.844V61.5z"/>
 			    </g>
 			</svg> </div>
         <!-- end logo -->
+        <!-- begin poles -->
+        <div class="poles">
+          <!-- begin figure -->
+          <div class="figure">
+            <div class="figure__left-vector js-figure-left-vector"><img src="./img/right-vector-figure.svg" alt="right-vector-figure"></div>
+            <div class="figure__left-blur js-figure-left-blur"><img src="./img/left-blur-figure.png" alt="left-blur-figure"></div>
+            <div class="figure__center-z js-figure-center-z"><img src="./img/z-center-figure.png" alt="z-center-figure"></div>
+            <div class="figure__right-vector js-figure-right-vector"><img src="./img/right-vector-figure.svg" alt="right-vector-figure"></div>
+            <div class="figure__right-blur js-figure-right-blur"><img src="./img/right-blur-figure.png" alt="right-blur-figure"></div> <svg class="figure__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="1307" viewBox="0 0 1440 1307">
+				    <defs>
+				        <linearGradient id="b" x1="424.97" y1="1120.75" x2="424.97" y2="1120.37" gradientTransform="matrix(46.07 0 0 -902.46 -18882.12 1011863.82)" gradientUnits="userSpaceOnUse">
+				            <stop offset="0" stop-color="#f0f2ef"/>
+				            <stop offset="1" stop-color="#dedfdd"/>
+				        </linearGradient>
+				        <linearGradient id="a" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -902.46 -18836.05 1011863.82)" gradientUnits="userSpaceOnUse">
+				            <stop offset="0" stop-color="#d4cbdc"/>
+				            <stop offset="1" stop-color="#a79bb2"/>
+				        </linearGradient>
+				        <linearGradient id="c" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -880.04 -18927.93 986763.63)" xlink:href="#a"/>
+				        <linearGradient id="d" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -880.04 -18881.86 986763.63)" xlink:href="#a"/>
+				        <linearGradient id="e" x1="424.97" y1="1120.75" x2="424.97" y2="1120.37" gradientTransform="matrix(46.07 0 0 -857.24 -18973.35 961226.67)" xlink:href="#b"/>
+				        <linearGradient id="f" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -857.24 -18927.29 961226.67)" xlink:href="#a"/>
+				        <linearGradient id="g" x1="424.97" y1="1120.74" x2="424.97" y2="1120.36" gradientTransform="matrix(46.07 0 0 -827.7 -19019.16 928143.23)" xlink:href="#b"/>
+				        <linearGradient id="h" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -827.7 -18973.1 928143.23)" xlink:href="#a"/>
+				        <linearGradient id="i" x1="424.97" y1="1120.74" x2="424.97" y2="1120.36" gradientTransform="matrix(46.11 0 0 -778.05 -19035.67 872544.35)" xlink:href="#b"/>
+				        <linearGradient id="j" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.11 0 0 -778.05 -18989.56 872544.35)" xlink:href="#a"/>
+				        <linearGradient id="k" x1="424.97" y1="1120.73" x2="424.97" y2="1120.35" gradientTransform="matrix(46.11 0 0 -755.37 -18990.36 847143.07)" xlink:href="#b"/>
+				        <linearGradient id="l" x1="424.97" y1="1120.71" x2="424.97" y2="1120.25" gradientTransform="matrix(46.11 0 0 -755.37 -18944.25 847143.07)" xlink:href="#a"/>
+				        <linearGradient id="m" x1="424.97" y1="1120.73" x2="424.97" y2="1120.28" gradientTransform="matrix(46.07 0 0 -908.93 -18790.37 1019117.48)" xlink:href="#a"/>
+				        <linearGradient id="n" x1="424.97" y1="1120.73" x2="424.97" y2="1120.28" gradientTransform="matrix(46.07 0 0 -908.93 -18744.3 1019117.48)" xlink:href="#a"/>
+				        <linearGradient id="o" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -886.25 -18745.06 993716.19)" xlink:href="#a"/>
+				        <linearGradient id="p" x1="424.97" y1="1120.73" x2="424.97" y2="1120.27" gradientTransform="matrix(46.07 0 0 -886.25 -18698.99 993716.19)" xlink:href="#a"/>
+				        <linearGradient id="q" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -828.48 -18835.54 929013.9)" xlink:href="#a"/>
+				        <linearGradient id="r" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -828.48 -18789.47 929013.9)" xlink:href="#a"/>
+				        <linearGradient id="s" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -805.67 -18790.11 903476.94)" xlink:href="#a"/>
+				        <linearGradient id="t" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -805.41 -18744.16 903180.9)" xlink:href="#a"/>
+				        <linearGradient id="u" x1="424.97" y1="1120.74" x2="424.97" y2="1120.36" gradientTransform="matrix(46.07 0 0 -782.87 -18836.19 877939.97)" xlink:href="#b"/>
+				        <linearGradient id="v" x1="424.97" y1="1120.72" x2="424.97" y2="1120.26" gradientTransform="matrix(46.07 0 0 -782.87 -18790.12 877939.97)" xlink:href="#a"/>
+				        <linearGradient id="w" x1="424.97" y1="1120.73" x2="424.97" y2="1120.35" gradientTransform="matrix(46.07 0 0 -753.06 -18881.99 844555.37)" xlink:href="#b"/>
+				        <linearGradient id="x" x1="424.97" y1="1120.71" x2="424.97" y2="1120.25" gradientTransform="matrix(46.07 0 0 -753.32 -18835.92 844851.41)" xlink:href="#a"/>
+				    </defs>
+				    <title>
+				        figure
+				    </title>
+				    <g data-name="Rectangle Isometric-Copy-2">
+				        <path data-name="Rectangle Left Isometric" fill="url(#b)" d="M719.11 1307h-46.07V404.54l46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#a)" d="M719.11 1307h46.07V404.54l-46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M673.04 404.54l46.07-23.06 46.07 23.06-46.07 23.07-46.07-23.07z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-3">
+				        <path data-name="Rectangle Left Isometric" fill="url(#c)" d="M673.3 1307h-46.07V426.96l46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#d)" d="M673.3 1307h46.07V426.96l-46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M627.23 426.96l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-4">
+				        <path data-name="Rectangle Left Isometric" fill="url(#e)" d="M627.88 1307h-46.07V449.76l46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#f)" d="M627.88 1307h46.07V449.76l-46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M581.81 449.76l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-5">
+				        <path data-name="Rectangle Left Isometric" fill="url(#g)" d="M582.07 1307H536V479.3l46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#h)" d="M582.07 1307h46.07V479.3l-46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M536 479.3l46.07-23.06 46.07 23.06-46.07 23.07L536 479.3z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-7">
+				        <path data-name="Rectangle Left Isometric" fill="url(#i)" d="M582.11 1307H536V528.95l46.11 23.08V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#j)" d="M582.11 1307h46.11V528.95l-46.11 23.08V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M536 528.95l46.11-23.09 46.11 23.09-46.11 23.08L536 528.95z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-12">
+				        <path data-name="Rectangle Left Isometric" fill="url(#k)" d="M627.42 1307h-46.11V551.63l46.11 23.09V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#l)" d="M627.42 1307h46.1V551.63l-46.1 23.09V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M581.31 551.63l46.11-23.09 46.1 23.09-46.1 23.09-46.11-23.09z"/>
+				    </g>
+				    <g data-name="1">
+				        <path data-name="Rectangle Left Isometric" fill="url(#m)" d="M810.86 1307h-46.07V398.07l46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#n)" d="M810.86 1307h46.07V398.07l-46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M764.79 398.07L810.86 375l46.07 23.07-46.07 23.06-46.07-23.06z"/>
+				    </g>
+				    <g data-name="2">
+				        <path data-name="Rectangle Left Isometric" fill="url(#o)" d="M856.17 1307H810.1V420.75l46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#p)" d="M856.17 1307h46.07V420.75l-46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M810.1 420.75l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-11">
+				        <path data-name="Rectangle Left Isometric" fill="url(#q)" d="M765.7 1307h-46.07V478.52l46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#r)" d="M765.7 1307h46.07V478.52l-46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M719.63 478.52l46.07-23.06 46.07 23.06-46.07 23.07-46.07-23.07z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-8">
+				        <path data-name="Rectangle Left Isometric" fill="url(#s)" d="M811.12 1307h-46.07V501.33l46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#t)" d="M811.01 1307h46.07V501.59l-46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M765.05 501.33l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-9">
+				        <path data-name="Rectangle Left Isometric" fill="url(#u)" d="M765.04 1307h-46.06V524.13l46.06 23.07V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#v)" d="M765.04 1307h46.07V524.13l-46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M718.98 524.13l46.06-23.07 46.07 23.07-46.07 23.07-46.06-23.07z"/>
+				    </g>
+				    <g data-name="Rectangle Isometric-Copy-10">
+				        <path data-name="Rectangle Left Isometric" fill="url(#w)" d="M719.24 1307h-46.07V553.94l46.07 23.07V1307z"/>
+				        <path data-name="Rectangle Right Isometric" fill="url(#x)" d="M719.24 1307h46.07V553.68l-46.07 23.06V1307z"/>
+				        <path data-name="Rectangle Top Isometric" fill="#fafdf9" d="M673.17 553.68l46.07-23.07 46.07 23.07-46.07 23.06-46.07-23.06z"/>
+				    </g>
+				</svg> </div>
+          <!-- end figure -->
+        </div>
+        <!-- end poles -->
         <!-- begin dust --><canvas class="dust js-dust"></canvas>
         <!-- end dust -->
       </div>
       <!-- end gravity -->
-      <div class="fp-slider js-fp-slider">
-        <div data-fp-slide="preloader">preloader</div>
-        <div data-fp-slide="cases">cases</div>
-        <div data-fp-slide="about">about</div>
+      <!-- begin rectangles -->
+      <div class="rectangles js-rectangles">
+        <div class="rectangles__inner inner">
+          <div class="rectangle-top"></div>
+          <div class="rectangle-left"></div>
+          <div class="rectangle-right"></div>
+        </div>
       </div>
+      <!-- end rectangles -->
+      <!-- begin fp-slider -->
+      <div class="fp-slider js-fp-slider">
+        <div data-fp-slide="preloader"></div>
+        <div data-fp-slide="cases">
+          <!-- begin inner -->
+          <div class="inner">
+            <!-- begin cases -->
+            <div class="cases">
+              <div class="cases__content">
+                <h2 class="cases__title title" data-stagger="up-left">We Are Gravity Agency</h2>
+                <p data-stagger="left">Let us show you that we are able <br>Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
+              </div>
+              <div class="cases__slider">
+                <div class="cases__slider-wrap" data-stagger="bottom">
+                  <!-- begin slider -->
+                  <div class="slider js-slider"> <a href="#" class="project">
+									<span class="project__img" style="background-image: url(./img/case-1.jpg);"></span>
+									<span class="project__content">
+										<h3 class="project__title">DIAMOND APARTMENTS</h3>
+										<p>Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.</p>
+									</span>
+								</a> <a href="#" class="project">
+									<span class="project__img" style="background-image: url(./img/case-2.jpg);"></span>
+									<span class="project__content">
+										<h3 class="project__title">CITY VOICE</h3>
+										<p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+									</span>
+								</a> <a href="#" class="project">
+									<span class="project__img" style="background-image: url(./img/case-3.jpg);"></span>
+									<span class="project__content">
+										<h3 class="project__title">MUSIC TOWN RECORDS</h3>
+										<p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+									</span>
+								</a> </div>
+                  <!-- end slider -->
+                </div>
+              </div>
+            </div>
+            <!-- end cases -->
+          </div>
+          <!-- end inner -->
+        </div>
+        <div data-fp-slide="about">
+          <!-- begin inner -->
+          <div class="inner">
+            <!-- begin about -->
+            <div class="about">
+              <div class="about__content">
+                <h2 class="about__title title" data-stagger="up-right">So who are we?</h2>
+                <p data-stagger="up-right">We are a creative web agency that will be able to build your project from idea into a working product. Starting from the formation of the vision of the project, ending with working as a clock, program code. By the way, we are also very
+                  cool designers.</p>
+              </div> <a href="#" class="about__info" data-stagger="bottom-right">
+						<span class="about__info-inner">Here you can read and see about how, what and why
+<svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+</span>
+					</a> </div>
+            <!-- end about -->
+          </div>
+          <!-- end inner -->
+        </div>
+      </div>
+      <!-- end fp-slider -->
+      <!-- begin popup -->
+      <div class="popup js-popup">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__inner"> <button type="button" class="popup__close js-popup-close">
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+</button>
+          <div class="popup__bg js-popup-bg"></div> <svg class="popup__triangle js-popup-triangle" width="1071px" height="1071px" viewBox="0 0 1071 1071" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			        <polyline stroke="#ACA1B7" points="1 0 536 1071 1070.55411 0"></polyline>
+			    </g>
+			</svg>
+          <div class="popup__triangle-blur"> <svg class="js-popup-triangle-blur" width="1071px" height="1071px" viewBox="0 0 1071 1071" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <polyline stroke="#ACA1B7" points="1 0 536 1071 1070.55411 0"></polyline>
+				    </g>
+				</svg> </div>
+          <div class="popup__content">
+            <h3 class="popup__title" data-stagger="from-down">Get in touch</h3>
+            <div class="popup__description" data-stagger="from-down"> <a href="mailto:hello@grvty.ru" class="popup__email"><span class="light">hello@</span>grvty.ru</a> </div>
+            <form class="popup__form form" action="/">
+              <div class="form-control" data-stagger="from-down"> <input type="text" class="input" placeholder="Name"> </div>
+              <div class="form-control" data-stagger="from-down"> <input type="text" class="input" placeholder="Phone/Email/Skype/Telegram"> </div>
+              <div class="form-control" data-stagger="from-down"> <label for="textarea" class="label">Tell us about your project</label> <textarea id="textarea" class="textarea"></textarea> </div>
+              <div class="form-footer" data-stagger="from-down"> <button type="submit" class="btn">Send</button> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end popup -->
+      <!-- begin footer -->
+      <footer class="footer js-footer">
+        <div class="footer__inner inner">
+          <!-- begin soc -->
+          <ul class="soc">
+            <li class="soc__item"><a href="#" class="soc__link">
+<svg class="icon icon-behance"><use xlink:href="img/sprite.svg#icon-behance"></use></svg>
+</a></li>
+            <li class="soc__item"><a href="#" class="soc__link">
+<svg class="icon icon-dribbble"><use xlink:href="img/sprite.svg#icon-dribbble"></use></svg>
+</a></li>
+          </ul>
+          <!-- end soc -->
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
