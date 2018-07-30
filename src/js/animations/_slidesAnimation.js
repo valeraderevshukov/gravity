@@ -16,6 +16,9 @@ const footer = $('.js-footer');
 const headerAnim = 'is-animate-header';
 const footerAnim = 'is-animate-footer';
 
+// index currentSlide
+window.currentSlide = 0;
+
 // flag
 window.contactsFlag = false;
 
@@ -23,10 +26,11 @@ window.contactsFlag = false;
 const ANIATION_ARRAY = [ '', FIRST_SLIDE, SECOND_SLIDE, THIRD_SLIDE ];
 
 //  ********** INIT FP-SLIDER
+const fpSliderDelay = 1300;
 let fpSlider = new FP_SLIDER({
   container: '.js-fp-slider',
   slide: '[data-fp-slide]',
-  delay: 1300
+  delay: fpSliderDelay
 });
 // disabled wheel
 fpSlider.disableMousewheel = true;
@@ -51,10 +55,11 @@ OBSERVER.SUB(EVENT.FP_DOWN, i => {
 // events after added state 
 OBSERVER.SUB(EVENT.FP_UP_AFTER, i => {
   if (+i === 0) return;
+  window.currentSlide = +i;
   ANIATION_ARRAY[+i].play(); 
 });
 OBSERVER.SUB(EVENT.FP_DOWN_AFTER, i => {
-  window.animatinIndex = +i;
+  window.currentSlide = +i;
   if (+i === ANIATION_ARRAY.length) return;
   if (+i >= 2) ANIATION_ARRAY[+i].play();
   // animate header/footer
@@ -74,38 +79,28 @@ OBSERVER.SUB(EVENT.FP_WHEEL, argument => {
 
 OBSERVER.SUB(EVENT.POPUP_CLOSE, () => { fpSlider.disableMousewheel = false; } );
 
+// ------------ NAVIGATION -------------
+const link = $('.js-nav-link');
+const items = $('.js-nav-item');
 let clickFlag = true;
-$('.nav a').on('click', function(e) {
+link.on('click', function(e) {
   e.preventDefault();
-  let index = $(this).parent().index() + 1;
-  let page = $(this).attr('href');
-  // fpSlider.next();
-  if (!clickFlag || index === window.animatinIndex) return;
-  if (index <= ANIATION_ARRAY.length - 2 ) {
-    // clickFlag = false;
-    // ANIATION_ARRAY[window.animatinIndex].reverse();
-    // setTimeout(() => {
-    //   $('[data-fp-slide]').removeClass('is-active');
-    //   $(`[data-fp-slide="${page}"]`).addClass('is-active');
-    //   ANIATION_ARRAY[index].play();
-    //   window.animatinIndex = index;
-    // }, 1300);
-    // setTimeout(() => { clickFlag = true; }, 3500);
-  }
-  else {
-    // if (window.animatinIndex === ANIATION_ARRAY.length - 1) return;
-    // clickFlag = false;
-    // ANIATION_ARRAY[window.animatinIndex].reverse();
-    // setTimeout(() => {
-    //   $('[data-fp-slide]').removeClass('is-active');
-    //   $($('[data-fp-slide]')[$('[data-fp-slide]').length - 1]).addClass('is-active');
-    //   ANIATION_ARRAY[index - 1].play();
-    //   window.animatinIndex = index;
-    // }, 1300);
-    // setTimeout(() => {
-    //   ANIATION_ARRAY[index].play();
-    // }, 2600);
-    // setTimeout(() => { clickFlag = true; }, 3500);
-  }
- 
+
+  if (!clickFlag) return;
+
+  clickFlag = false;
+
+  let that = $(this);
+  let parent = that.parents('.js-nav-item');
+  let index = parent.index();
+  // tests
+  let textForPopup = (index + 1 === items.length);
+  let testForNext = (index + 1 > window.currentSlide && index < items.length && !textForPopup && index + 1 !== window.currentSlide);
+  let testForPrev = (index < window.currentSlide);
+
+  if (testForNext) fpSlider.next();
+  if (testForPrev) fpSlider.prev();
+  if (textForPopup) ANIATION_ARRAY[index + 1].play();
+  
+  setTimeout(() => { clickFlag = true;}, fpSliderDelay*2);
 });

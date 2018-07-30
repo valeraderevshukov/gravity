@@ -10,7 +10,7 @@
 		<!-- end logo -->
 		<!-- begin nav -->
 		<nav class="nav">
-			<ul class="nav__list">cases
+			<ul class="nav__list">
 				{% for item in [{
 					href: "cases",
 					text: 'CASES'
@@ -23,7 +23,7 @@
 					href: "contacts",
 					text: 'CoNTACTS'
 				}] %}
-				<li class="nav__item"><a href="{{ item.href }}" class="nav__link js-nav-link">{{ item.text }}</a></li>
+				<li class="nav__item js-nav-item"><a href="{{ item.href }}" class="nav__link js-nav-link">{{ item.text }}</a></li>
 				{% endfor %}
 			</ul>
 		</nav>
