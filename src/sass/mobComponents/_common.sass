@@ -1,0 +1,24 @@
+body
+	font-family: $Futuras 
+	color: rgba($black, 0.5)
+	+f(null,500,1.3333)
+	+css-lock(14,30,320,1024)
+	min-width: 320px
+	text-align: center
+	+font-smoothing
+	letter-spacing: 0
+	background-color: $white
+
+.inner
+	margin: 0 auto
+	+css-lock(15,50,320,1024,padding-left)
+	+css-lock(15,50,320,1024,padding-right)
+	max-width: 990px 
+
+.title
+	font-family: $Futuras 
+	+f(null,500,1.25)
+	+css-lock(25,50,320,1024)
+	text-align: center
+	&_black
+		color: $black 

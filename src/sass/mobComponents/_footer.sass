@@ -1,0 +1,23 @@
+.footer
+	+css-lock(7,14,320,1024,padding-top) 
+	+css-lock(33,66,320,1024,padding-bottom) 
+	padding: 14px
+	+clr
+	&__agency
+		float: left
+		text-transform: uppercase
+		color: $black-l
+		letter-spacing: 0
+	&__soc
+		float: right
+
+.soc
+	+css-lock(0,5,320,1024,margin-top) 
+	font-size: 0
+	&__item
+		vertical-align: middle
+		display: inline-block
+		&:not(:first-child)
+			+css-lock(15,30,320,1024,margin-left) 
+	&__link
+		display: block

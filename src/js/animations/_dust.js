@@ -4,6 +4,7 @@ import { WIN } from '../constants';
 (() => {
   const parent = $('.js-gravity');
   const canvasWindow = $('.js-dust');
+  if (!parent.length) return;
   $(() => {
     let H, Particle, W, animateParticles, canvas, clearCanvas, colorArray, createParticles, ctx, drawParticles, initParticleSystem, particleCount, particles, updateParticles;
     Particle = function() {

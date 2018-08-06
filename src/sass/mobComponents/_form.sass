@@ -1,0 +1,37 @@
+.form
+	+css-lock(35,70,320,1024,padding-top) 
+	+css-lock(23,46,320,1024,padding-bottom) 
+	&__inner
+		+css-lock(36,74,320,1024,padding-left)
+		+css-lock(36,74,320,1024,padding-right)
+.form-control
+	&:not(:first-child)
+		+css-lock(10,20,320,1024,margin-top)
+.btn
+	+css-lock(13,30,320,1024,padding-top) 
+	+css-lock(13,30,320,1024,padding-bottom) 
+	+css-lock(13,30,320,1024,padding-left) 
+	+css-lock(13,30,320,1024,padding-right)  
+	width: 100%
+	color: $white 
+	font-family: $Futuras 
+	+f(null,500,1)
+	+css-lock(14,30,320,1024)
+	text-transform: uppercase
+	text-align: center
+	background-color: $amethystSmoke
+	+css-lock(4,9,320,1024,border-radius)  
+	vertical-align: top
+	display: inline-block
+.input
+	padding: 10px
+	width: 100%
+	+css-lock(30,50,320,1024,height)
+	color: $black-l
+	font-family: $Futuras 
+	+f(null,500,1)
+	+css-lock(14,30,320,1024)
+	border-bottom: 1px solid rgba(#979797, 0.5)
+	display: block
+	&::placeholder
+		color: rgba(#979797, 0.7)

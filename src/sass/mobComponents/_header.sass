@@ -1,0 +1,30 @@
+.header
+	position: relative
+	z-index: 3
+	+css-lock(15,30,320,1024,padding-top)
+	+css-lock(15,30,320,1024,padding-bottom)
+	background-color: $black-l
+	&__inner
+		position: relative
+		+css-lock(43,86,320,1024,padding-left)
+		+css-lock(43,86,320,1024,padding-right)
+	&__mail
+		position: absolute
+		top: 50%
+		+css-lock(15,50,320,1024,left)
+		+css-lock(-7,-16,320,1024,margin-top)
+		svg
+			width: auto
+			+css-lock(15,33,320,1024,height)
+	&__agency 
+		font-family: $Futuras
+		+css-lock(15,30,320,1024)
+		font-weight: 500 
+		color: $white
+		line-height: 1
+		letter-spacing: 0
+		h1
+			font-weight: 500 
+			line-height: 1
+			letter-spacing: 0
+			+css-lock(15,30,320,1024)

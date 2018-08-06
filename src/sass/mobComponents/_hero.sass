@@ -1,0 +1,25 @@
+.hero
+	+css-lock(-45,-90,320,1024,margin-top)
+	+css-lock(70,140,320,1024,padding-top)
+	padding-bottom: 150px 
+	height: 100vh
+	background-position: 50% 50% 
+	background-size: cover
+	&__title
+			+css-lock(10,20,320,1024,margin-bottom)
+	&__btn
+		position: absolute
+		left: 50%
+		bottom: 25px
+		height: 50px
+		width: 50px
+		margin-left: -25px
+		border-radius: 50% 
+		background-color: $white 
+		svg
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			width: 19px
+			height: auto
