@@ -33,8 +33,8 @@ export default (() => {
   const firstSlide = new TimelineMax({ paused: true });
   const play = () => {
     firstSlide
-      .add(stagger({ elements: [staggerUp, staggerLeft], duration: 1.5, ease: Power3.easeInOut, delay: -0.3 }).play(), 1.2)
-      .add(stagger({ elements: staggerBottom, duration: 1.5, ease: Power3.easeInOut }).play(), 1.1)
+      .add(stagger({ elements: [staggerUp, staggerLeft], duration: 0.75, ease: Power3.easeInOut, delay: -0.3 }).play(), 0.6)
+      .add(stagger({ elements: staggerBottom, duration: 0.75, ease: Power3.easeInOut }).play(), 0.55)
       .call(() => {
         if (!figureFirstFlag) return;
         new TimelineMax()
@@ -42,16 +42,16 @@ export default (() => {
             alpha: 0,
             ease: Power0.easeNone
           }, 0)
-          .to(svg, 1.5, {
+          .to(svg, 0.75, {
             strokeDashoffset: 2000,
             ease: Expo.easeOut
           }, 0)
-          .add(figureTo({ container: figureLeftVector, x: '300px', y: '350px', duration: 1.6, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: figureLeftBlur, x: '330px', y: '-100px', duration: 1.6, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: figureCenterZ, x: '80px', y: '-50px', duration: 1.6, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: figureRightVector, x: '330px', y: '-180px', duration: 1.6, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: figureRightBlur, x: '100px', y: '150px', duration: 1.6, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: path, x: '310px', y: '-230px', duration: 1.6, ease: Power2.easeInOut, delay: 0.05}).play(), 0.5);
+          .add(figureTo({ container: figureLeftVector, x: '300px', y: '350px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
+          .add(figureTo({ container: figureLeftBlur, x: '330px', y: '-100px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
+          .add(figureTo({ container: figureCenterZ, x: '80px', y: '-50px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
+          .add(figureTo({ container: figureRightVector, x: '330px', y: '-180px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
+          .add(figureTo({ container: figureRightBlur, x: '100px', y: '150px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
+          .add(figureTo({ container: path, x: '310px', y: '-230px', duration: 0.8, ease: Power2.easeInOut, delay: 0.05}).play(), 0.5);
         figureFirstFlag = false;
       }, null, null, 0)
     	.play();

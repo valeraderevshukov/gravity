@@ -10,12 +10,15 @@ import FIRST_SLIDE from './_firstSlide';
 import SECOND_SLIDE from './_secondSlide';
 import { THIRD_SLIDE } from './_thirdSlide';
 
+import { ACTIVE } from '../constants';
+
 // any const
 const header = $('.js-header');
 const footer = $('.js-footer');
 const headerAnim = 'is-animate-header';
 const footerAnim = 'is-animate-footer';
-
+const trigger = $('.js-gravity-arrow');
+const navItems = $('.js-nav-item');
 // index currentSlide
 window.currentSlide = 0;
 
@@ -26,7 +29,7 @@ window.contactsFlag = false;
 const ANIATION_ARRAY = [ '', FIRST_SLIDE, SECOND_SLIDE, THIRD_SLIDE ];
 
 //  ********** INIT FP-SLIDER
-const fpSliderDelay = 1300;
+const fpSliderDelay = 650;
 let fpSlider = new FP_SLIDER({
   container: '.js-fp-slider',
   slide: '[data-fp-slide]',
@@ -34,7 +37,13 @@ let fpSlider = new FP_SLIDER({
 });
 // disabled wheel
 fpSlider.disableMousewheel = true;
-OBSERVER.SUB(EVENT.LOADER_COMPLATE, () => { fpSlider.disableMousewheel = false; });
+// OBSERVER.SUB(EVENT.LOADER_COMPLATE, () => { fpSlider.disableMousewheel = false; });
+
+trigger.on('click', () => {
+  fpSlider.disableMousewheel = false;
+  fpSlider.next();
+  $(navItems[0]).addClass(ACTIVE);
+});
 
 // ********** EVENTS WHITS WHEELS **********
 
@@ -71,21 +80,22 @@ OBSERVER.SUB(EVENT.FP_DOWN_AFTER, i => {
 });
 
 OBSERVER.SUB(EVENT.FP_WHEEL, argument => {
-  if (window.contactsFlag && argument[1] === EVENT.FP_DOWN) {
-    fpSlider.disableMousewheel = true;
-    ANIATION_ARRAY[argument[0] + 1].play();
-  }
+  // if (window.contactsFlag && argument[1] === EVENT.FP_DOWN) {
+  //   fpSlider.disableMousewheel = true;
+  //   ANIATION_ARRAY[argument[0] + 1].play();
+  // }
+  navItems.removeClass(ACTIVE);
+  $(navItems[argument[0] - 1]).addClass(ACTIVE);
 });
 
 OBSERVER.SUB(EVENT.POPUP_CLOSE, () => { fpSlider.disableMousewheel = false; } );
 
 // ------------ NAVIGATION -------------
 const link = $('.js-nav-link');
-const items = $('.js-nav-item');
 let clickFlag = true;
 link.on('click', function(e) {
   e.preventDefault();
-
+  
   if (!clickFlag) return;
 
   clickFlag = false;
@@ -93,9 +103,12 @@ link.on('click', function(e) {
   let that = $(this);
   let parent = that.parents('.js-nav-item');
   let index = parent.index();
+
+  navItems.removeClass(ACTIVE);
+  parent.addClass(ACTIVE);
   // tests
-  let textForPopup = (index + 1 === items.length);
-  let testForNext = (index + 1 > window.currentSlide && index < items.length && !textForPopup && index + 1 !== window.currentSlide);
+  let textForPopup = (index + 1 === navItems.length);
+  let testForNext = (index + 1 > window.currentSlide && index < navItems.length && !textForPopup && index + 1 !== window.currentSlide);
   let testForPrev = (index < window.currentSlide);
 
   if (testForNext) fpSlider.next();

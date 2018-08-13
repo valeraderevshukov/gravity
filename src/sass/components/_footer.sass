@@ -15,8 +15,8 @@
 	width: 50px
 	pointer-events: initial
 	transform: translateX( calc((-100vw + 1440px) / 2 - 100px) )
-	transition: transform 0.7s ease-out
-	transition-delay: 0.7s
+	transition: transform 0.35s ease-out
+	transition-delay: 0.35s
 	+r(1440)
 		transform: translateX(-100px)
 	.is-animate-footer &
@@ -31,5 +31,11 @@
 			font-size: 16px
 			width: 27px
 			text-align: center
+			transition: fill .3s ease-in-out
 		.icon-dribbble
 			font-size: 27px
+			+hover
+				fill: #ea4c89
+		.icon-behance
+			+hover
+				fill: #81aaf2

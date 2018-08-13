@@ -12,8 +12,8 @@
 	text-transform: uppercase
 	background-color: $black-bg 
 	transform: translate(-30px,-86px)
-	transition: transform 0.6s ease-out
-	transition-delay: 0.5s
+	transition: transform 0.3s ease-out
+	transition-delay: 0.25s
 	.is-animate-header &
 		transform: translate(0,0)
 	&:before
@@ -40,8 +40,8 @@
 	font-size: 0
 	background-color: $white 
 	transform: translate(-60px,-86px)
-	transition: transform 0.6s ease-out
-	transition-delay: 1s
+	transition: transform 0.3s ease-out
+	transition-delay: 0.5s
 	.is-animate-header &
 		transform: translate(0,0)
 	&__list
@@ -51,15 +51,31 @@
 		vertical-align: top
 		display: inline-block
 	&__link
+		position: relative
 		font-size: 14px
 		font-weight: 500 
 		color: $black-l
 		text-transform: uppercase
 		letter-spacing: 0
+		overflow: hidden
 		display: block
 		transition: color .3s
+		&:after
+			position: absolute
+			top: 100%
+			left: 0
+			content: ""
+			height: 2px
+			width: 100%
+			margin-top: -1px
+			background-color: $black-l
+			transform: translateX(-101%)
+			transition: transform .3s ease-in-out
+			.nav__item:not(:last-child).is-active &
+				transform: translateX(0)
 		+hover
-			color: $amethystSmoke
+			&:after
+				transform: translateX(0)
 .lang
 	position: relative
 	float: right
@@ -67,8 +83,8 @@
 	font-size: 0
 	background-color: $white 
 	transform: translateX(calc((100vw - 1440px) / 2 + 161px))
-	transition: transform 0.6s ease-out
-	transition-delay: 0.5s
+	transition: transform 0.3s ease-out
+	transition-delay: 0.25s
 	+r(1440)
 		transform: translateX(161px)
 	.is-animate-header &

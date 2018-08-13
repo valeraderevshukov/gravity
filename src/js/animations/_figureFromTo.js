@@ -1,7 +1,7 @@
 export default props => {
   return ( 
     new TimelineMax({ paused: true })
-      .staggerFromTo(props.container, props.duration || 2, {
+      .staggerFromTo(props.container, props.duration || 1, {
         transform: `translate3d(${props.fromX || 0},${props.fromY || 0},0)`
       }, {
         transform: `translate3d(${props.toX || 0},${props.toY || 0},0)`,

@@ -16,9 +16,9 @@ export default class FP_SLIDER {
     this._scrollTimeout = null;
     this._direction = '';
     this.disableMousewheel = false;
-    this.disableMousewheelDelay = config.disableMousewheelDelay || 1500;
+    this.disableMousewheelDelay = config.disableMousewheelDelay || 1000;
 
-    this._delay = config.delay || 1000;
+    this._delay = config.delay || 650;
 
     this.init();
   }

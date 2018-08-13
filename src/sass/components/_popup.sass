@@ -78,8 +78,8 @@
 	&__content
 		position: relative
 		padding: 100px 50px 180px
-		+css-lock(30,100,1024,1440,padding-top)
-		+css-lock(30,180,1024,1440,padding-bottom)
+		+css-lock(20,70,1024,1440,padding-top)
+		+css-lock(20,100,1024,1440,padding-bottom)
 		color: $gray 
 		font-size: 20px
 	&__title
@@ -89,7 +89,7 @@
 		letter-spacing: 0
 	&__email
 		color: #ACA1B7 
-		font-size: 40px
+		+css-lock(18,40,1024,1440)
 		letter-spacing: 0
 		line-height: 1.25
 		transition: border-color .3s
@@ -98,5 +98,8 @@
 			border-color: currentColor
 	&__form
 		margin: 100px auto 0
-		+css-lock(20,100,1024,1440,margin-top)
+		+css-lock(20,80,1024,1440,margin-top)
 		max-width: 372px
+		.form-control
+			&:not(:first-child)
+				+css-lock(10,35,1024,1440,margin-top)
