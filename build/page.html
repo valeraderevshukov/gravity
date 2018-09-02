@@ -51,13 +51,24 @@
 			</svg>
 		</button>
         <div class="gravity-bg js-gravity-bg"></div>
-        <!-- begin lines --><svg class="lines js-lines" width="1911" height="1214" viewBox="0 0 1911 1214" xmlns="http://www.w3.org/2000/svg">
-		    <title>lines</title>
-		    <g fill="none" fill-rule="evenodd" stroke-linecap="square">
-		        <path stroke="#fff" d="M.5 139.5l535 1071 534.554-1071"/>
-		        <path d="M35.5 1213.5L641.5.5" stroke="#fff"/>
-		        <path stroke="#fff" d="M720.5 140.5l534 1069 535.448-1069.508"/>
-		        <path stroke="#fff" d="M840.5 140.5l534 1067 535.677-1068.344"/>
+        <!-- begin lines --><svg class="lines" height="1250px" viewBox="0 0 1917 1250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		    <defs>
+		        <filter x="-0.8%" y="-0.8%" width="101.6%" height="101.5%" filterUnits="objectBoundingBox" id="filter-1">
+		            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+		        </filter>
+		        <filter x="-0.9%" y="-0.9%" width="101.8%" height="101.8%" filterUnits="objectBoundingBox" id="filter-2">
+		            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+		        </filter>
+		    </defs>
+		    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g transform="translate(0.000000, 6.000000)">
+		            <g class="js-lines" transform="translate(0.000000, 139.000000)">
+		                <path stroke="#fff" d="M0.5 0.5 535.5 1071.5 1070.054 0.5"/>
+		                <path stroke="#fff" d="M720.5 1.5 1254.5 1070.5 1789.948 0.992"/>
+		            </g>
+		            <polyline class="lines__blur js-lines-blur" stroke="#fff" filter="url(#filter-1)" points="35.5 1213.5 641.5 0.5 1257.01226 1236.91466"></polyline>
+		            <polyline class="lines__blur js-lines-blur" stroke="#fff" filter="url(#filter-2)" points="840.5 140.5 1374.5 1207.5 1910.177 139.156"></polyline>
+		        </g>
 		    </g>
 		</svg>
         <!-- end lines -->
@@ -209,25 +220,70 @@
                 <p data-stagger="left">Let us show you that we are able <br>Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
               </div>
               <div class="cases__slider">
-                <div class="cases__slider-wrap" data-stagger="bottom">
+                <div class="cases__slider-wrap js-slider-wrap" data-stagger="bottom">
+                  <!-- begin small-slider -->
+                  <div class="small-slider js-small-slider"> <a href="#" class="project">
+									<span class="project__img">
+										<img src="./img/case-1.jpg" alt="img">
+									</span>
+								</a> <a href="#" class="project">
+									<span class="project__img">
+										<img src="./img/case-2.jpg" alt="img">
+									</span>
+								</a> <a href="#" class="project">
+									<span class="project__img">
+										<img src="./img/case-3.jpg" alt="img">
+									</span>
+								</a> <a href="#" class="project">
+									<span class="project__img">
+										<img src="./img/case-2.jpg" alt="img">
+									</span>
+								</a> </div>
+                  <!-- end small-slider -->
+                  <!-- begin slider-text -->
+                  <div class="slider-text js-slider-text">
+                    <a href="#" class="slider-text__slide slider-text__slide_black">
+                      <div class="slider-text__inner">
+                        <div class="slider-text__title">DIAMOND APARTMENTS</div>
+                        <p>Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.</p>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-text__slide">
+                      <div class="slider-text__inner">
+                        <div class="slider-text__title">CITY VOICE</div>
+                        <p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-text__slide slider-text__slide_black">
+                      <div class="slider-text__inner">
+                        <div class="slider-text__title">MUSIC TOWN RECORDS</div>
+                        <p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+                      </div>
+                    </a>
+                    <a href="#" class="slider-text__slide">
+                      <div class="slider-text__inner">
+                        <div class="slider-text__title">CITY VOICE</div>
+                        <p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- end slider-text -->
                   <!-- begin slider -->
                   <div class="slider js-slider"> <a href="#" class="project">
-									<span class="project__img" style="background-image: url(./img/case-1.jpg);"></span>
-									<span class="project__content">
-										<h3 class="project__title">DIAMOND APARTMENTS</h3>
-										<p>Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.</p>
+									<span class="project__img">
+										<img src="./img/case-1.jpg" alt="img">
 									</span>
 								</a> <a href="#" class="project">
-									<span class="project__img" style="background-image: url(./img/case-2.jpg);"></span>
-									<span class="project__content">
-										<h3 class="project__title">CITY VOICE</h3>
-										<p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+									<span class="project__img">
+										<img src="./img/case-2.jpg" alt="img">
 									</span>
 								</a> <a href="#" class="project">
-									<span class="project__img" style="background-image: url(./img/case-3.jpg);"></span>
-									<span class="project__content">
-										<h3 class="project__title">MUSIC TOWN RECORDS</h3>
-										<p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+									<span class="project__img">
+										<img src="./img/case-3.jpg" alt="img">
+									</span>
+								</a> <a href="#" class="project">
+									<span class="project__img">
+										<img src="./img/case-2.jpg" alt="img">
 									</span>
 								</a> </div>
                   <!-- end slider -->

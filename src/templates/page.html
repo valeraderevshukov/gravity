@@ -17,13 +17,24 @@ title: Index page
 		</button>
 		<div class="gravity-bg js-gravity-bg"></div>
 		<!-- begin lines -->
-		<svg class="lines js-lines" width="1911" height="1214" viewBox="0 0 1911 1214" xmlns="http://www.w3.org/2000/svg">
-		    <title>lines</title>
-		    <g fill="none" fill-rule="evenodd" stroke-linecap="square">
-		        <path stroke="#fff" d="M.5 139.5l535 1071 534.554-1071"/>
-		        <path d="M35.5 1213.5L641.5.5" stroke="#fff"/>
-		        <path stroke="#fff" d="M720.5 140.5l534 1069 535.448-1069.508"/>
-		        <path stroke="#fff" d="M840.5 140.5l534 1067 535.677-1068.344"/>
+		<svg class="lines" height="1250px" viewBox="0 0 1917 1250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		    <defs>
+		        <filter x="-0.8%" y="-0.8%" width="101.6%" height="101.5%" filterUnits="objectBoundingBox" id="filter-1">
+		            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+		        </filter>
+		        <filter x="-0.9%" y="-0.9%" width="101.8%" height="101.8%" filterUnits="objectBoundingBox" id="filter-2">
+		            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+		        </filter>
+		    </defs>
+		    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g transform="translate(0.000000, 6.000000)">
+		            <g class="js-lines" transform="translate(0.000000, 139.000000)">
+		                <path stroke="#fff" d="M0.5 0.5 535.5 1071.5 1070.054 0.5"/>
+		                <path stroke="#fff" d="M720.5 1.5 1254.5 1070.5 1789.948 0.992"/>
+		            </g>
+		            <polyline class="lines__blur js-lines-blur" stroke="#fff" filter="url(#filter-1)" points="35.5 1213.5 641.5 0.5 1257.01226 1236.91466"></polyline>
+		            <polyline class="lines__blur js-lines-blur" stroke="#fff" filter="url(#filter-2)" points="840.5 140.5 1374.5 1207.5 1910.177 139.156"></polyline>
+		        </g>
 		    </g>
 		</svg>
 		<!-- end lines -->
@@ -182,31 +193,81 @@ title: Index page
 						<p data-stagger="left">Let us show you that we are able <br>Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
 					</div>
 					<div class="cases__slider">
-						<div class="cases__slider-wrap" data-stagger="bottom">
+						<div class="cases__slider-wrap js-slider-wrap" data-stagger="bottom">
+							<!-- begin small-slider -->
+							<div class="small-slider js-small-slider">
+								{% for project in [
+									{
+										img: "case-1"
+									},
+									{
+										img: "case-2"
+									},
+									{
+										img: "case-3"
+									},
+									{
+										img: "case-2"
+									}
+									] %}
+								<a href="#" class="project">
+									<span class="project__img">
+										<img src="./img/{{ project.img }}.jpg" alt="img">
+									</span>
+								</a>
+								{% endfor %}
+							</div>
+							<!-- end small-slider -->
+							<!-- begin slider-text -->
+							<div class="slider-text js-slider-text">
+								{% for slide in [
+								{
+									class: 'black',
+									title: "DIAMOND APARTMENTS",
+									text: "Development of a website for renting luxury apartments located in the business center of the capital - Moscow City."
+								},
+								{
+									title: "CITY VOICE",
+									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
+								},
+								{
+									class: 'black',
+									title: "MUSIC TOWN RECORDS",
+									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
+								},
+								{
+									title: "CITY VOICE",
+									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
+								}
+								] %}
+									<a href="#" class="slider-text__slide{% if slide.class %} slider-text__slide_{{ slide.class }}{% endif %}">
+										<div class="slider-text__inner">
+											<div class="slider-text__title">{{ slide.title }}</div>
+											<p>{{ slide.text }}</p>
+										</div>
+									</a>
+								{% endfor %}
+							</div>
+							<!-- end slider-text -->
 							<!-- begin slider -->
 							<div class="slider js-slider">
 								{% for project in [
 									{
-										img: "case-1",
-										title: "DIAMOND APARTMENTS",
-										text: "Development of a website for renting luxury apartments located in the business center of the capital - Moscow City."
+										img: "case-1"
 									},
 									{
-										img: "case-2",
-										title: "CITY VOICE",
-										text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
+										img: "case-2"
 									},
 									{
-										img: "case-3",
-										title: "MUSIC TOWN RECORDS",
-										text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
+										img: "case-3"
+									},
+									{
+										img: "case-2"
 									}
 									] %}
 								<a href="#" class="project">
-									<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
-									<span class="project__content">
-										<h3 class="project__title">{{ project.title }}</h3>
-										<p>{{ project.text }}</p>
+									<span class="project__img">
+										<img src="./img/{{ project.img }}.jpg" alt="img">
 									</span>
 								</a>
 								{% endfor %}

@@ -46,12 +46,12 @@ export default (() => {
             strokeDashoffset: 2000,
             ease: Expo.easeOut
           }, 0)
-          .add(figureTo({ container: figureLeftVector, x: '300px', y: '350px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: figureLeftBlur, x: '330px', y: '-100px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: figureCenterZ, x: '80px', y: '-50px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: figureRightVector, x: '330px', y: '-180px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: figureRightBlur, x: '100px', y: '150px', duration: 0.8, ease: Power2.easeInOut }).play(), 0)
-          .add(figureTo({ container: path, x: '310px', y: '-230px', duration: 0.8, ease: Power2.easeInOut, delay: 0.05}).play(), 0.5);
+          .add(figureTo({ container: figureLeftVector, x: '300px', y: '350px', duration: 0.8, ease: Power0.easeNone }).play(), 0)
+          .add(figureTo({ container: figureLeftBlur, x: '330px', y: '-100px', duration: 0.8, ease: Power0.easeNone }).play(), 0)
+          .add(figureTo({ container: figureCenterZ, x: '80px', y: '-50px', duration: 0.8, ease: Power0.easeNone }).play(), 0)
+          .add(figureTo({ container: figureRightVector, x: '330px', y: '-180px', duration: 0.8, ease: Power0.easeNone }).play(), 0)
+          .add(figureTo({ container: figureRightBlur, x: '100px', y: '150px', duration: 0.8, ease: Power0.easeNone }).play(), 0)
+          .add(figureTo({ container: path, x: '310px', y: '-230px', duration: 0.8, ease: Power0.easeNone, delay: 0.05}).play(), 0.5);
         figureFirstFlag = false;
       }, null, null, 0)
     	.play();

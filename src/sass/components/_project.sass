@@ -2,23 +2,26 @@
 	width: 600px
 	// +font-smoothing
 	table-layout: fixed
-	background-color: $black 
+	background-color: $white
 	display: table
 	&_mob
 		width: 100%
 		&:not(:first-child)
 			+css-lock(5,10,320,1024,margin-top) 
 	&__img
-		width: 230px
-		height: 300px
-		vertical-align: top
-		background-position: 50% 50% 
-		background-size: cover
-		display: table-cell
-		+css-lock(150,300,1024,1440,height)
+		display: block
+		img
+			width: 100%
+			object-fit: cover
+			object-position: center
+			+css-lock(150,300,1024,1440,height)
 		.project_mob &
 			width: 40%
 			+css-lock(195,390,320,1024,height)
+			vertical-align: top
+			background-position: 50% 50% 
+			background-size: cover
+			display: table-cell
 	&__content
 		margin-bottom: 40px
 		padding: 20px 25px 45px

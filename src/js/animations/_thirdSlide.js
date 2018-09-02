@@ -32,10 +32,7 @@ export const THIRD_SLIDE = new TimelineMax({ paused: true })
     strokeDashoffset: 0,
     ease: Power0.easeNone
   }, 0.7)
-  .to(popupTriangleBlur, 1, {
-    strokeDashoffset: 0,
-    ease: Power0.easeNone
-  }, 0.4)
+  .add(() => {popupTriangleBlur.toggleClass('show-blur');}, 1.8)
   .add(
     new TimelineMax()
       .staggerTo(staggerEl, 0.3, {
@@ -51,4 +48,5 @@ export const THIRD_SLIDE = new TimelineMax({ paused: true })
 
 popupCloseEl.on('click', () => {
   THIRD_SLIDE.reverse();
+  setTimeout(() => { popupTriangleBlur.removeClass('show-blur'); }, 1800);
 });

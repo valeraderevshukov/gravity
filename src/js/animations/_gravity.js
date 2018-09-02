@@ -3,7 +3,7 @@ import { logoAnim } from './_logo';
 import figureFromTo from './_figureFromTo';
 import OBSERVER from '../communication/_observer';
 import EVENT from '../communication/_events';
-
+import { ANIMATE } from '../constants';
 
 
 const path = $('.figure svg g');
@@ -35,7 +35,8 @@ const linesAnim = new TimelineMax({ paused: true})
   .staggerTo(lines, 2, {
     strokeDashoffset: 0,
     ease: Power3.easeinOut
-  }, 0.5, 'lines');
+  }, 0.5, 'lines')
+  .eventCallback('onComplete', () => {$('.js-lines-blur').addClass(ANIMATE);});
 
 const FullAnim = new TimelineMax({ paused: true, force3D: true })
   .add(bgAnim.play(), 0)

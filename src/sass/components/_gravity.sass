@@ -50,6 +50,13 @@
 	path
 		stroke-dasharray: 2500
 		stroke-dashoffset: 2500
+	&__blur
+		opacity: 0
+		visibility: hidden
+		transition: opacity .6s, visibility .6s
+		&.is-animate
+			opacity: 1
+			visibility: visible
 
 .logo
 	position: absolute
