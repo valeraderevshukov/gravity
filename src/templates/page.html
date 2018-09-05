@@ -7,14 +7,20 @@ title: Index page
 	{% include "partials/_header.html" %}
 	<!-- begin gravity -->
 	<div class="gravity js-gravity">
-		<button type="button" class="gravity__arrow js-gravity-arrow">
-			<svg width="51" height="27" viewBox="0 0 51 27" xmlns="http://www.w3.org/2000/svg">
-			    <title>arrow</title>
-			    <g fill="none" fill-rule="evenodd">
-			        <path d="M2 2l22.492 23L49 2" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-			    </g>
-			</svg>
-		</button>
+		<div class="gravity__arrow-wrap js-gravity-arrow">
+			<div class="gravity__arrow-inner">
+				<div class="gravity__arrow-btn">
+					<button type="button" class="gravity__arrow">
+						<svg width="51" height="27" viewBox="0 0 51 27" xmlns="http://www.w3.org/2000/svg">
+						    <title>arrow</title>
+						    <g fill="none" fill-rule="evenodd">
+						        <path d="M2 2l22.492 23L49 2" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+						    </g>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
 		<div class="gravity-bg js-gravity-bg"></div>
 		<!-- begin lines -->
 		<svg class="lines" height="1250px" viewBox="0 0 1917 1250" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -189,8 +195,9 @@ title: Index page
 				<!-- begin cases -->
 				<div class="cases">
 					<div class="cases__content">
-						<h2 class="cases__title title" data-stagger="up-left">We Are Gravity Agency</h2>
-						<p data-stagger="left">Let us show you that we are able <br>Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
+						<h2 class="cases__title title" data-stagger="up-left"><span class="js-lang-en">We Are Gravity Agency</span><span class="js-lang-ru">Текст текст текст текст текст</span></h2>
+						<p data-stagger="left" class="js-lang-en">Let us show you that we are able <br>Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
+						<p data-stagger="left" class="js-lang-ru">Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст текстТекст текст текст текст текст</p>
 					</div>
 					<div class="cases__slider">
 						<div class="cases__slider-wrap js-slider-wrap" data-stagger="bottom">
@@ -224,26 +231,36 @@ title: Index page
 								{
 									class: 'black',
 									title: "DIAMOND APARTMENTS",
-									text: "Development of a website for renting luxury apartments located in the business center of the capital - Moscow City."
+									text: "Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.",
+									titleRu: "DIAMOND APARTMENTS",
+									textRu: "Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст"
 								},
 								{
 									title: "CITY VOICE",
-									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
+									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute",
+									titleRu: "CITY VOICE",
+									textRu: "Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст"
 								},
 								{
 									class: 'black',
 									title: "MUSIC TOWN RECORDS",
-									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
+									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute",
+									titleRu: "MUSIC TOWN RECORDS",
+									textRu: "Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст"
 								},
 								{
 									title: "CITY VOICE",
-									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
+									text: "Why not let someone else worry about Christmas and New Year this year and book a last minute",
+									titleRu: "CITY VOICE",
+									textRu: "Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст текст Текст текст текст текст"
 								}
 								] %}
 									<a href="#" class="slider-text__slide{% if slide.class %} slider-text__slide_{{ slide.class }}{% endif %}">
 										<div class="slider-text__inner">
-											<div class="slider-text__title">{{ slide.title }}</div>
-											<p>{{ slide.text }}</p>
+											<div class="slider-text__title js-lang-en">{{ slide.title }}</div>
+											<div class="slider-text__title js-lang-ru">{{ slide.titleRu }}</div>
+											<p class="js-lang-en">{{ slide.text }}</p>
+											<p class="js-lang-ru">{{ slide.textRu }}</p>
 										</div>
 									</a>
 								{% endfor %}
@@ -286,11 +303,16 @@ title: Index page
 				<!-- begin about -->
 				<div class="about">
 					<div class="about__content">
-						<h2 class="about__title title" data-stagger="up-right">So who are we?</h2>
-						<p data-stagger="up-right">We are a creative web agency that will be able to build your project from idea into a working product. Starting from the formation of the vision of the project, ending with working as a clock, program code. By the way, we are also very cool designers.</p>
+						<h2 class="about__title title js-lang-en" data-stagger="up-right">So who are we?</h2>
+						<p class="js-lang-en" data-stagger="up-right">We are a creative web agency that will be able to build your project from idea into a working product. Starting from the formation of the vision of the project, ending with working as a clock, program code. By the way, we are also very cool designers.</p>
+						<h2 class="about__title title js-lang-ru" data-stagger="up-right">Текст текст текст</h2>
+						<p class="js-lang-ru"  data-stagger="up-right">Текст текст текст текст текст Текст текст текст текст текстТекст текст текст текст текст Текст текст текст текст текстТекст текст текст текст текст Текст текст текст текст текстТекст текст текст текст текст Текст текст текст текст текст</p>
 					</div>
 					<a href="#" class="about__info" data-stagger="bottom-right">
-						<span class="about__info-inner">Here you can read and see about how, what and why{{mixins.icon('arrow-right')}}</span>
+						<span class="about__info-inner">
+							<span class="js-lang-en">Here you can read and see about how, what and why{{mixins.icon('arrow-right')}}</span>
+							<span class="js-lang-ru">Текст текст текст текст текст Текст текст текст текст текст{{mixins.icon('arrow-right')}}</span>
+						</span>
 					</a>
 				</div>
 				<!-- end about -->
@@ -318,7 +340,8 @@ title: Index page
 				</svg>
 			</div>
 			<div class="popup__content">
-				<h3 class="popup__title" data-stagger="from-down">Get in touch</h3>
+				<h3 class="popup__title js-lang-en" data-stagger="from-down">Get in touch</h3>
+				<h3 class="popup__title js-lang-ru" data-stagger="from-down">Текст текст</h3>
 				<div class="popup__description" data-stagger="from-down">
 					<a href="mailto:hello@grvty.ru" class="popup__email"><span class="light">hello@</span>grvty.ru</a>
 				</div>
@@ -330,13 +353,27 @@ title: Index page
 						<input type="text" class="input" placeholder="Phone/Email/Skype/Telegram">
 					</div>
 					<div class="form-control" data-stagger="from-down">
-						<label for="textarea" class="label">Tell us about your project</label>
+						<label for="textarea" class="label">
+							Tell us about your project
+						</label>
 						<textarea id="textarea" class="textarea"></textarea>
 					</div>
 					<div class="form-footer" data-stagger="from-down">
-						<button type="submit" class="btn">Send</button>
+						<button type="submit" class="btn js-form-submit">
+							Send
+							<svg class="btn__submit-check" width="65px" height="53px" viewBox="0 0 65 53" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+							        <polyline stroke="#fff" stroke-width="8" points="6 35.292483 18 47.292483 58.8073463 5.84066984"></polyline>
+							    </g>
+							</svg>
+						</button>
 					</div>
 				</form>
+				<div class="popup__footer">
+					<p><a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+					<p>127018, Москва, Складочная, д.3, стр.3</p>
+					<a href="#" class="popup__requisites">Реквизиты</a>
+				</div>
 			</div>
 		</div>
 	</div>

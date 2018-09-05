@@ -15,12 +15,33 @@ const figureRightVector = $('.js-figure-right-vector');
 const figureRightBlur = $('.js-figure-right-blur');
 
 const arrow = $('.js-gravity-arrow');
+const toggleDuration = 0.6;
 const arrowAnim = new TimelineMax({ paused: true})
-  .to(arrow, 0.5, { 
-    alpha: 1, 
-    y: 0, 
-    ease: Power3.easeOut 
-  }, 0)
+  .call(() => { arrow.addClass(ANIMATE); }, null, null, 0)
+  // .addLabel('start')
+  // .addLabel('secondStart', toggleDuration)
+  // .to(arrow, toggleDuration, {
+  //   x: -20,
+  //   ease: Back.easeIn.config(1.7)
+  // }, 'start')
+  // .to('.gravity__arrow', toggleDuration, {
+  //   y: -115,
+  //   scale: 0.5,
+  //   ease: Back.easeOut.config(1.7)
+  // }, 'start')
+  // .to(arrow, toggleDuration + 1, {
+  //   x: 0,
+  //   ease: Power1.easeIn
+  // }, 'secondStart')
+  // .to('.gravity__arrow', toggleDuration + 1, {
+  //   y: 0,
+  //   scale: 1,
+  //   ease: Power1.easeOut
+  // }, 'secondStart')
+  // .to('body', toggleDuration + 1, {
+  //   blur: 10,
+  //   ease: Power1.easeOut
+  // }, 'secondStart')
   .eventCallback('onComplete', () => OBSERVER.ON_FIRE(EVENT.LOADER_COMPLATE), null);;
 
 const gravityBg = $('.js-gravity-bg');

@@ -15,18 +15,79 @@
 		height: 100vw
 		pointer-events: none
 		background-image: radial-gradient(circle at top, rgba(#FAFDF9,1) 0%, rgba(#A79BB2,0) 64%)
-	&__arrow
+	&__arrow-wrap
 		position: absolute
-		left: 50%
 		width: 70px
+		left: 50%
 		margin-left: -35px
-		bottom: 60px
+		z-index: 5
+		height: 70px
+		bottom: 50px
+		font-size: 0
+		text-align: center
+		&.is-animate
+			animation: arrowAnimWrap 2.3s ease-out alternate forwards
+			.gravity
+				&__arrow
+					animation: arrowAnim 2.3s ease-out alternate forwards
+					svg 
+						animation: arrowAnimSvg 2.3s ease-out alternate forwards
+				&__arrow-inner
+					animation: arrowAnimInner 2.3s ease-out alternate forwards
+	&__arrow-inner
+		position: relative
+	&__arrow-btn
+		position: relative
+	&__arrow
+		position: relative
+		width: 70px
+		height: 70px
 		font-size: 0
 		z-index: 30
-		opacity: 0
 		text-align: center
 		background-color: transparent 
-		transform: translateY(-30px)
+		border-radius: 50%
+		background-color: $white
+		transform: translateY(50px) scale(0)
+		vertical-align: top
+		display: inline-block
+		svg 
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -7px 0 0 -14px
+			width: 28px
+			height: 14px
+			path
+				stroke: #A79BB1 
+
+@keyframes arrowAnimWrap
+	0%
+		transform: translate(0,0)
+	40%
+		transform: translate(0px,-150px)
+	100%
+		transform: translate(0,0)
+@keyframes arrowAnim
+	0%
+		transform: translate(0px,100px) scale(0) rotate(0deg)
+		transform-origin: 200% 200%
+	100%
+		transform: translate(0,0) scale(1) rotate(-720deg)
+		transform-origin: 50% 50%
+@keyframes arrowAnimSvg
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(720deg)
+@keyframes arrowAnimInner
+	0%
+		transform: translateX(0)
+	30%
+		transform: translateX(-50px)
+	100%
+		transform: translateX(0)
+
 .gravity-bg
 	position: absolute
 	top: 0

@@ -1,5 +1,7 @@
 import { SCROLL_TO } from './utils';
 import { DOC, WIN } from './constants';
+// components
+import './components/_lang';
 
 DOC.ready(() => {
   const btnUp = $('.js-scroll-to');

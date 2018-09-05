@@ -58,3 +58,36 @@
 	display: block
 	+hover
 		background-color: darken(#ACA1B7, 10%) 
+	&[type="submit"]
+		position: relative
+		padding: 17px 17px
+		left: 50%
+		transform: translateX(-50%)
+		transition: width .3s ease-in, color .3s ease-in, background-color .3s ease-in, border-radius .3s ease-in
+		&.is-animate
+			width: 50px
+			color: transparent 
+			border-radius: 50px 
+			background-color: #59D547 
+			animation: submitAnim .3s ease-in-out alternate forwards
+			animation-delay: .3s
+	&__submit-check
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -11px 0 0 -13px
+		width: 26px
+		height: auto
+		stroke-dasharray: 80
+		stroke-dashoffset: 80
+		transition: stroke-dashoffset .3s ease-in-out
+		transform: scale(1) rotateY(-180deg)
+		.is-animate &
+			stroke-dashoffset: 0
+			transition-delay: 0.7s
+
+@keyframes submitAnim
+	0%
+		transform: translateX(-50%) rotateY(0)
+	100%
+		transform: translateX(-50%) rotateY(180deg)
