@@ -1,17 +1,79 @@
+
+.form-control
+	&:not(:first-child)
+		margin-top: 35px
+		+css-lock(35,70,320,1024,margin-top) 
+.form-footer
+	margin-top: 20px
+
+.textarea 
+	padding: 10px
+	width: 100%
+	+css-lock(82,164,320,1024,height) 
+	resize: none
+	font-family: $Futuras
+	+f(null,500,1)
+	+css-lock(14,30,320,1024)
+	color: $black
+	letter-spacing: 0
+	background-color: rgba(#ACA1B7, .1) 
+	border: none
+	display: block
+.label
+	font-family: $Futuras
+	text-align: left
+	+f(null,500,1)
+	+css-lock(14,30,320,1024)
+	cursor: pointer
+	user-select: none
+	color: rgba(#191925, 0.5)
+	display: block
+	&:not(:last-child)
+		margin-bottom: 15px
 .form
 	+css-lock(35,70,320,1024,padding-top) 
 	+css-lock(23,46,320,1024,padding-bottom) 
 	&__inner
 		+css-lock(36,74,320,1024,padding-left)
 		+css-lock(36,74,320,1024,padding-right)
+	&__content
+		position: relative
+		padding: 90px 50px 230px
+		+css-lock(20,90,1024,1440,padding-top)
+		+css-lock(120,170,1024,1440,padding-bottom)
+		color: $gray 
+		font-size: 20px
+	&__title
+		font-family: $Futuras
+		font-weight: 300 
+		+css-lock(35,70,1024,1440)
+		color: $gray
+		letter-spacing: 0
+	&__email
+		color: #ACA1B7 
+		+css-lock(38,76,1024,1440)
+		letter-spacing: 0
+		line-height: 1.25
+	&__cont
+		+css-lock(39,78,1024,1440,padding-top)
+		+css-lock(39,78,1024,1440,padding-bottom)
+		color: rgba(#4A4A4A, .5) 
+		font-weight: 500 
+		text-align: center
+		border-bottom: 1px solid #979797 
+		a
+			color: rgba(#4A4A4A, .5) 
+		p
+			&:not(:first-child)
+				+css-lock(19,38,1024,1440,margin-top)
 .form-control
 	&:not(:first-child)
-		+css-lock(10,20,320,1024,margin-top)
+		+css-lock(35,70,320,1024,margin-top)
 .btn
-	+css-lock(13,30,320,1024,padding-top) 
-	+css-lock(13,30,320,1024,padding-bottom) 
-	+css-lock(13,30,320,1024,padding-left) 
-	+css-lock(13,30,320,1024,padding-right)  
+	+css-lock(12,24,320,1024,padding-top) 
+	+css-lock(12,24,320,1024,padding-bottom) 
+	+css-lock(12,24,320,1024,padding-left) 
+	+css-lock(12,24,320,1024,padding-right)  
 	width: 100%
 	color: $white 
 	font-family: $Futuras 
@@ -21,10 +83,44 @@
 	text-align: center
 	background-color: $amethystSmoke
 	+css-lock(4,9,320,1024,border-radius)  
-	vertical-align: top
-	display: inline-block
-.input
-	padding: 10px
+	display: block
+	&[type="submit"]
+		position: relative
+		left: 50%
+		+css-lock(36,74,320,1024,height) 
+		transform: translateX(-50%)
+		transition: width .3s ease-in, color .3s ease-in, background-color .3s ease-in, border-radius .3s ease-in
+		&.is-animate
+			+css-lock(36,74,320,1024,width)  
+			color: transparent 
+			border-radius: 50px 
+			background-color: #59D547 
+			animation: submitAnim .3s ease-in-out alternate forwards
+			animation-delay: .3s
+	&__submit-check
+		position: absolute
+		top: 50%
+		left: 50%
+		+css-lock(-7,-16,320,1024,margin-top) 
+		+css-lock(-10,-18,320,1024,margin-left) 
+		+css-lock(18,34,320,1024,width) 
+		height: auto
+		stroke-dasharray: 80
+		stroke-dashoffset: 80
+		transition: stroke-dashoffset .3s ease-in-out
+		transform: scale(1) rotateY(-180deg)
+		.is-animate &
+			stroke-dashoffset: 0
+			transition-delay: 0.7s
+
+@keyframes submitAnim
+	0%
+		transform: translateX(-50%) rotateY(0)
+	100%
+		transform: translateX(-50%) rotateY(180deg)
+
+.input 
+	padding: 10px 0
 	width: 100%
 	+css-lock(30,50,320,1024,height)
 	color: $black-l
@@ -35,4 +131,9 @@
 	border-bottom: 1px solid rgba(#979797, 0.5)
 	display: block
 	&::placeholder
-		color: rgba(#979797, 0.7)
+		color: rgba(#191925, 0.5)
+		transition: color .3s
+	&:focus
+		border-color: #ACA1B7 
+		&::placeholder
+			font-size: 0

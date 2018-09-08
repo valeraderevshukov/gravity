@@ -19,8 +19,8 @@ export default (() => {
   const secondSlide = new TimelineMax({ paused: true });
   const play = () => {
     secondSlide
-      .add(stagger({ elements: staggerUpRight, duration: 0.65, ease: Power0.easeNone, delay: -0.15 }).play(), 0.35)
-      .add(stagger({ elements: staggerBottomRight, duration: 0.65, ease: Power0.easeNone, delay: 0.2 }).play(), 0.35)
+      .add(stagger({ elements: staggerUpRight, duration: 0.65, ease: Power2.easeInOut, delay: -0.15 }).play(), 0.35)
+      .add(stagger({ elements: staggerBottomRight, duration: 0.65, ease: Power2.easeInOut, delay: 0.2 }).play(), 0.35)
       .play();
     if (rectanglesFlag) return;
     rectangles

@@ -1,8 +1,10 @@
 .hero
+	position: relative
 	+css-lock(-45,-90,320,1024,margin-top)
 	+css-lock(70,140,320,1024,padding-top)
 	padding-bottom: 150px 
 	height: 100vh
+	overflow: hidden
 	background-position: 50% 50% 
 	background-size: cover
 	&__title
@@ -23,3 +25,10 @@
 			transform: translate(-50%,-50%)
 			width: 19px
 			height: auto
+
+.dust
+	position: absolute
+	top: 0
+	left: 0
+	pointer-events: none
+	z-index: 1

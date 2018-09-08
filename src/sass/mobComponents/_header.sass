@@ -28,3 +28,29 @@
 			line-height: 1
 			letter-spacing: 0
 			+css-lock(15,30,320,1024)
+	&__lang
+		position: absolute
+		top: 50%
+		+css-lock(15,50,320,1024,right)
+		+css-lock(-6,-12,320,1024,margin-top)
+
+.lang
+	font-size: 0
+	line-height: 1
+	&__item
+		position: relative
+		vertical-align: top
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 6px
+	&__link
+		+css-lock(13,26,320,1024)
+		font-weight: 500 
+		color: $white
+		text-transform: uppercase
+		letter-spacing: 0
+		transition: color .3s
+		+hover
+			color: #ACA1B6
+		&.is-active
+			color: #ACA1B6

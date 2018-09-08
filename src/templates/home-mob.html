@@ -7,7 +7,7 @@ title: Home mob
 	<!-- begin header -->
 	<header class="header">
 		<div class="header__inner inner">
-			<a href="#" class="header__mail">
+			<a href="#form" class="header__mail js-scroll-to">
 				<svg width="44px" height="33px" viewBox="0 0 44 33" version="1.1" xmlns="http://www.w3.org/2000/svg">
 				    <desc>email</desc>
 				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -22,6 +22,12 @@ title: Home mob
 			<a href="#" class="header__agency">
 				<h1>GRAVITY AGENCY</h1>
 			</a>
+			<!-- begin lang -->
+			<ul class="lang header__lang">
+				<li class="lang__item"><a href="#" class="lang__link js-en-choose">en</a></li>
+				<li class="lang__item"><a href="#" class="lang__link js-ru-choose">ru</a></li>
+			</ul>
+			<!-- end lang -->
 		</div>
 	</header>
 	<!-- end header -->
@@ -29,7 +35,8 @@ title: Home mob
 	<div class="hero" style="background-image: url(./img/hero-mob-full-bg.jpg);">
 		<div class="hero__inner inner">
 			<h2 class="hero__title title title_black">We Are Gravity Agency</h2>
-			<p>Let us show you that we are able Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
+			<p class="js-lang-en">Let us show you that we are able Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
+			<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
 		</div>
 		<a href="#portfolio" type="button" class="hero__btn js-scroll-to">
 			<svg width="42px" height="22px" viewBox="0 0 42 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -46,41 +53,124 @@ title: Home mob
 	</div>
 	<!-- end hero -->
 	<!-- begin portfolio -->
-	<div class="portfolio" id="portfolio">
-		{% for project in [
-			{
-				img: "case-1",
-				title: "DIAMOND APARTMENTS",
-				text: "Development of a website for renting luxury apartments located in the business center of the capital - Moscow City."
-			},
-			{
-				imgRight: true,
-				img: "case-2",
-				title: "CITY VOICE",
-				text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
-			},
-			{
-				img: "case-3",
-				title: "MUSIC TOWN RECORDS",
-				text: "Why not let someone else worry about Christmas and New Year this year and book a last minute"
-			}
-			] %}
-		<a href="#" class="project project_mob">
-			{% if project.imgRight %}
-			<span class="project__content">
-				<h3 class="project__title">{{ project.title }}</h3>
-				<p>{{ project.text }}</p>
-			</span>
-			<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
-			{% else %}
-			<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
-			<span class="project__content">
-				<h3 class="project__title">{{ project.title }}</h3>
-				<p>{{ project.text }}</p>
-			</span>
-			{% endif %}
-		</a>
-		{% endfor %}
+	<div class="portfolio js-portfolio-slider" id="portfolio">
+		<div class="portfolio__slide">
+			{% for project in [
+				{
+					img: "case-1",
+					title: "DIAMOND APARTMENTS",
+					text: "Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.",
+					textRu: 'Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст '
+				},
+				{
+					imgRight: true,
+					img: "case-2",
+					title: "CITY VOICE",
+					text: "Why not let someone else worry about Christmas and New Year this year and book a last minute",
+					textRu: 'Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст '
+				},
+				{
+					img: "case-3",
+					title: "MUSIC TOWN RECORDS",
+					text: "Why not let someone else worry about Christmas and New Year this year and book a last minute",
+					textRu: 'Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст '
+				}
+				] %}
+			<a href="#" class="project project_mob">
+				{% if project.imgRight %}
+				<span class="project__content">
+					<h3 class="project__title">{{ project.title }}</h3>
+					<p class="js-lang-en">{{ project.text }}</p>
+					<p class="js-lang-ru">{{ project.textRu }}</p>
+				</span>
+				<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
+				{% else %}
+				<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
+				<span class="project__content">
+					<h3 class="project__title">{{ project.title }}</h3>
+					<p class="js-lang-en">{{ project.text }}</p>
+					<p class="js-lang-ru">{{ project.textRu }}</p>
+				</span>
+				{% endif %}
+			</a>
+			{% endfor %}
+		</div>
+		<div class="portfolio__slide">
+			{% for project in [
+				{
+					img: "case-1",
+					title: "DIAMOND APARTMENTS 22",
+					text: "Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.",
+					textRu: 'Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст '
+				},
+				{
+					imgRight: true,
+					img: "case-2",
+					title: "CITY VOICE 22",
+					text: "Why not let someone else worry about Christmas and New Year this year and book a last minute",
+					textRu: 'Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст '
+				},
+				{
+					img: "case-3",
+					title: "MUSIC TOWN RECORDS 22",
+					text: "Why not let someone else worry about Christmas and New Year this year and book a last minute",
+					textRu: 'Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст '
+				}
+				] %}
+			<a href="#" class="project project_mob">
+				{% if project.imgRight %}
+				<span class="project__content">
+					<h3 class="project__title">{{ project.title }}</h3>
+					<p class="js-lang-en">{{ project.text }}</p>
+					<p class="js-lang-ru">{{ project.textRu }}</p>
+				</span>
+				<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
+				{% else %}
+				<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
+				<span class="project__content">
+					<h3 class="project__title">{{ project.title }}</h3>
+					<p class="js-lang-en">{{ project.text }}</p>
+					<p class="js-lang-ru">{{ project.textRu }}</p>
+				</span>
+				{% endif %}
+			</a>
+			{% endfor %}
+		</div>
+		<div class="portfolio__slide">
+			{% for project in [
+				{
+					img: "case-1",
+					title: "DIAMOND APARTMENTS 33",
+					text: "Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.",
+					textRu: 'Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст '
+				},
+				{
+					imgRight: true,
+					img: "case-2",
+					title: "CITY VOICE 33",
+					text: "Why not let someone else worry about Christmas and New Year this year and book a last minute",
+					textRu: 'Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст '
+				}
+				] %}
+			<a href="#" class="project project_mob">
+				{% if project.imgRight %}
+				<span class="project__content">
+					<h3 class="project__title">{{ project.title }}</h3>
+					<p class="js-lang-en">{{ project.text }}</p>
+					<p class="js-lang-ru">{{ project.textRu }}</p>
+				</span>
+				<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
+				{% else %}
+				<span class="project__img" style="background-image: url(./img/{{ project.img }}.jpg);"></span>
+				<span class="project__content">
+					<h3 class="project__title">{{ project.title }}</h3>
+					<p class="js-lang-en">{{ project.text }}</p>
+					<p class="js-lang-ru">{{ project.textRu }}</p>
+				</span>
+				{% endif %}
+			</a>
+			{% endfor %}
+		</div>
 	</div>
 	<!-- end portfolio -->
 	<!-- begin about -->
@@ -88,27 +178,54 @@ title: Home mob
 		<div class="about__wrap">
 			<div class="about__inner inner">
 				<h2 class="about__title title title_black">So who are we?</h2>
-				<p>We are a creative web agency that will be able to build your project from idea into a working product. Starting from the formation of the vision of the project, ending with working as a clock, program code. By the way, we are also very cool designers.</p>
+				<p class="js-lang-en">We are a creative web agency that will be able to build your project from idea into a working product. Starting from the formation of the vision of the project, ending with working as a clock, program code. By the way, we are also very cool designers.</p>
+				<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
 			</div>
 		</div>
 		<div class="about__footer">
 			<div class="about__inner inner">
-				<a href="#" class="about__link">Here you can read and see about how, what and why</a>
+				<a href="#" class="about__link">
+					<span class="js-lang-en">Here you can read and see about how, what and why</span>
+					<span class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст </span>
+				</a>
 			</div>
 		</div>
 	</div>
 	<!-- end about -->
 	<!-- begin form -->
-	<div class="form">
+	<form action="/" class="form" id="form">
 		<div class="form__inner inner">
-			<form action="/">
-				<div class="form-control">
-					<button class="btn" type="submit">HIRE US</button>
-				</div>
-				<div class="form-control">
-					<input type="text" class="input" placeholder="Email/Phone">
-				</div>
-			</form>
+			<h3 class="form__title js-lang-en" >Get in touch</h3>
+			<h3 class="form__title js-lang-ru" >Текст текст</h3>
+			<div class="form__description">
+				<a href="mailto:hello@grvty.ru" class="form__email"><span class="light">hello@</span>grvty.ru</a>
+			</div>
+			<div class="form-control">
+				<input type="text" class="input" placeholder="Name">
+			</div>
+			<div class="form-control">
+				<input type="text" class="input" placeholder="Phone/Email/Skype/Telegram">
+			</div>
+			<div class="form-control">
+				<label for="textarea" class="label">
+					Tell us about your project
+				</label>
+				<textarea id="textarea" class="textarea"></textarea>
+			</div>
+			<div class="form-footer">
+				<button type="submit" class="btn js-form-submit">
+					HIRE US
+					<svg class="btn__submit-check" width="65px" height="53px" viewBox="0 0 65 53" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+					        <polyline stroke="#fff" stroke-width="8" points="6 35.292483 18 47.292483 58.8073463 5.84066984"></polyline>
+					    </g>
+					</svg>
+				</button>
+			</div>
+			<div class="form__cont">
+				<p><a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+				<p>127018, Москва, Складочная, д.3, стр.3</p>
+			</div>
 		</div>
 	</div>
 	<!-- end form -->

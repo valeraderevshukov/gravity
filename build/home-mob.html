@@ -15,7 +15,7 @@
     <div class="out">
       <!-- begin header -->
       <header class="header">
-        <div class="header__inner inner"> <a href="#" class="header__mail">
+        <div class="header__inner inner"> <a href="#form" class="header__mail js-scroll-to">
 				<svg width="44px" height="33px" viewBox="0 0 44 33" version="1.1" xmlns="http://www.w3.org/2000/svg">
 				    <desc>email</desc>
 				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -30,6 +30,12 @@
           <a href="#" class="header__agency">
             <h1>GRAVITY AGENCY</h1>
           </a>
+          <!-- begin lang -->
+          <ul class="lang header__lang">
+            <li class="lang__item"><a href="#" class="lang__link js-en-choose">en</a></li>
+            <li class="lang__item"><a href="#" class="lang__link js-ru-choose">ru</a></li>
+          </ul>
+          <!-- end lang -->
         </div>
       </header>
       <!-- end header -->
@@ -37,7 +43,8 @@
       <div class="hero" style="background-image: url(./img/hero-mob-full-bg.jpg);">
         <div class="hero__inner inner">
           <h2 class="hero__title title title_black">We Are Gravity Agency</h2>
-          <p>Let us show you that we are able Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
+          <p class="js-lang-en">Let us show you that we are able Here we have collected interesting projects in which we participated. You can not replace business with a word, so we'll show you the working solutions and how we developed them.</p>
+          <p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
         </div> <a href="#portfolio" type="button" class="hero__btn js-scroll-to">
 			<svg width="42px" height="22px" viewBox="0 0 42 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
 			    <desc>arrow-bottom</desc>
@@ -52,61 +59,134 @@
 		</a> </div>
       <!-- end hero -->
       <!-- begin portfolio -->
-      <div class="portfolio" id="portfolio"> <a href="#" class="project project_mob">
-			
-			<span class="project__img" style="background-image: url(./img/case-1.jpg);"></span>
-			<span class="project__content">
-				<h3 class="project__title">DIAMOND APARTMENTS</h3>
-				<p>Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.</p>
-			</span>
-			
-		</a> <a href="#" class="project project_mob">
-			
-			<span class="project__content">
-				<h3 class="project__title">CITY VOICE</h3>
-				<p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
-			</span>
-			<span class="project__img" style="background-image: url(./img/case-2.jpg);"></span>
-			
-		</a> <a href="#" class="project project_mob">
-			
-			<span class="project__img" style="background-image: url(./img/case-3.jpg);"></span>
-			<span class="project__content">
-				<h3 class="project__title">MUSIC TOWN RECORDS</h3>
-				<p>Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
-			</span>
-			
-		</a> </div>
+      <div class="portfolio js-portfolio-slider" id="portfolio">
+        <div class="portfolio__slide"> <a href="#" class="project project_mob">
+				
+				<span class="project__img" style="background-image: url(./img/case-1.jpg);"></span>
+				<span class="project__content">
+					<h3 class="project__title">DIAMOND APARTMENTS</h3>
+					<p class="js-lang-en">Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.</p>
+					<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+				</span>
+				
+			</a> <a href="#" class="project project_mob">
+				
+				<span class="project__content">
+					<h3 class="project__title">CITY VOICE</h3>
+					<p class="js-lang-en">Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+					<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+				</span>
+				<span class="project__img" style="background-image: url(./img/case-2.jpg);"></span>
+				
+			</a> <a href="#" class="project project_mob">
+				
+				<span class="project__img" style="background-image: url(./img/case-3.jpg);"></span>
+				<span class="project__content">
+					<h3 class="project__title">MUSIC TOWN RECORDS</h3>
+					<p class="js-lang-en">Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+					<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+				</span>
+				
+			</a> </div>
+        <div class="portfolio__slide"> <a href="#" class="project project_mob">
+				
+				<span class="project__img" style="background-image: url(./img/case-1.jpg);"></span>
+				<span class="project__content">
+					<h3 class="project__title">DIAMOND APARTMENTS 22</h3>
+					<p class="js-lang-en">Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.</p>
+					<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+				</span>
+				
+			</a> <a href="#" class="project project_mob">
+				
+				<span class="project__content">
+					<h3 class="project__title">CITY VOICE 22</h3>
+					<p class="js-lang-en">Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+					<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+				</span>
+				<span class="project__img" style="background-image: url(./img/case-2.jpg);"></span>
+				
+			</a> <a href="#" class="project project_mob">
+				
+				<span class="project__img" style="background-image: url(./img/case-3.jpg);"></span>
+				<span class="project__content">
+					<h3 class="project__title">MUSIC TOWN RECORDS 22</h3>
+					<p class="js-lang-en">Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+					<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+				</span>
+				
+			</a> </div>
+        <div class="portfolio__slide"> <a href="#" class="project project_mob">
+				
+				<span class="project__img" style="background-image: url(./img/case-1.jpg);"></span>
+				<span class="project__content">
+					<h3 class="project__title">DIAMOND APARTMENTS 33</h3>
+					<p class="js-lang-en">Development of a website for renting luxury apartments located in the business center of the capital - Moscow City.</p>
+					<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+				</span>
+				
+			</a> <a href="#" class="project project_mob">
+				
+				<span class="project__content">
+					<h3 class="project__title">CITY VOICE 33</h3>
+					<p class="js-lang-en">Why not let someone else worry about Christmas and New Year this year and book a last minute</p>
+					<p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+				</span>
+				<span class="project__img" style="background-image: url(./img/case-2.jpg);"></span>
+				
+			</a> </div>
+      </div>
       <!-- end portfolio -->
       <!-- begin about -->
       <div class="about">
         <div class="about__wrap">
           <div class="about__inner inner">
             <h2 class="about__title title title_black">So who are we?</h2>
-            <p>We are a creative web agency that will be able to build your project from idea into a working product. Starting from the formation of the vision of the project, ending with working as a clock, program code. By the way, we are also very cool
+            <p class="js-lang-en">We are a creative web agency that will be able to build your project from idea into a working product. Starting from the formation of the vision of the project, ending with working as a clock, program code. By the way, we are also very cool
               designers.</p>
+            <p class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст
+              </p>
           </div>
         </div>
         <div class="about__footer">
-          <div class="about__inner inner"> <a href="#" class="about__link">Here you can read and see about how, what and why</a> </div>
+          <div class="about__inner inner"> <a href="#" class="about__link">
+					<span class="js-lang-en">Here you can read and see about how, what and why</span>
+					<span class="js-lang-ru">Текст текст Текст текст Текст текст Текст текст </span>
+				</a> </div>
         </div>
       </div>
       <!-- end about -->
       <!-- begin form -->
-      <div class="form">
+      <form action="/" class="form" id="form">
         <div class="form__inner inner">
-          <form action="/">
-            <div class="form-control"> <button class="btn" type="submit">HIRE US</button> </div>
-            <div class="form-control"> <input type="text" class="input" placeholder="Email/Phone"> </div>
-          </form>
+          <h3 class="form__title js-lang-en">Get in touch</h3>
+          <h3 class="form__title js-lang-ru">Текст текст</h3>
+          <div class="form__description"> <a href="mailto:hello@grvty.ru" class="form__email"><span class="light">hello@</span>grvty.ru</a> </div>
+          <div class="form-control"> <input type="text" class="input" placeholder="Name"> </div>
+          <div class="form-control"> <input type="text" class="input" placeholder="Phone/Email/Skype/Telegram"> </div>
+          <div class="form-control"> <label for="textarea" class="label">
+					Tell us about your project
+				</label> <textarea id="textarea" class="textarea"></textarea> </div>
+          <div class="form-footer"> <button type="submit" class="btn js-form-submit">
+					HIRE US
+					<svg class="btn__submit-check" width="65px" height="53px" viewBox="0 0 65 53" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+					        <polyline stroke="#fff" stroke-width="8" points="6 35.292483 18 47.292483 58.8073463 5.84066984"></polyline>
+					    </g>
+					</svg>
+				</button> </div>
+          <div class="form__cont">
+            <p><a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+            <p>127018, Москва, Складочная, д.3, стр.3</p>
+          </div>
         </div>
-      </div>
-      <!-- end form -->
-      <!-- begin footer -->
-      <footer class="footer">
-        <div class="footer__inner inner"> <a href="#" class="footer__agency">GRAVITY AGENCY</a>
-          <ul class="footer__soc soc">
-            <li class="soc__item"> <a href="#" class="soc__link">
+    </div>
+    <!-- end form -->
+    <!-- begin footer -->
+    <footer class="footer">
+      <div class="footer__inner inner"> <a href="#" class="footer__agency">GRAVITY AGENCY</a>
+        <ul class="footer__soc soc">
+          <li class="soc__item"> <a href="#" class="soc__link">
 						<svg width="24px" height="15px" viewBox="0 0 48 31" version="1.1" xmlns="http://www.w3.org/2000/svg">
 						    <g istroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						        <g transform="translate(-584.000000, -3477.000000)" fill="#191926" fill-rule="nonzero">
@@ -115,7 +195,7 @@
 						    </g>
 						</svg>
 					</a> </li>
-            <li class="soc__item"> <a href="#" class="soc__link">
+          <li class="soc__item"> <a href="#" class="soc__link">
 						<svg width="19px" height="19px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg">
 						    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						        <g transform="translate(-662.000000, -3473.000000)" fill="#191926" fill-rule="nonzero">
@@ -124,10 +204,10 @@
 						    </g>
 						</svg>
 					</a> </li>
-          </ul>
-        </div>
-      </footer>
-      <!-- end footer -->
+        </ul>
+      </div>
+    </footer>
+    <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

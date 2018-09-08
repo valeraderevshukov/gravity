@@ -1,0 +1,32 @@
+.portfolio
+	.slick-dots
+		margin-top: 19px
+		font-size: 0
+		li
+			vertical-align: top
+			display: inline-block
+			&:not(:first-child)
+				margin-left: 12px
+			&.slick-active
+				button
+					background-color: #0E0A1C 
+		button
+			position: relative
+			width: 12px
+			height: 12px
+			border: 1px solid #86848D
+			border-radius: 50% 
+			font-size: 0
+			transition: background-color .3s
+			display: block
+			&:before
+				position: absolute
+				content: "" 
+				top: -5px
+				left: -5px
+				right: -5px
+				bottom: -5px
+	&__slide
+		font-size: 0
+
+		
