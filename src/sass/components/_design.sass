@@ -1,0 +1,350 @@
+.design
+	&__inner
+		position: relative
+		
+.progect-info
+	position: relative
+	margin: 103px auto 0
+	padding: 113px 105px 105px
+	max-width: 878px 
+	color: $white 
+	text-align: center
+	background-color: $darkBg
+	[data-obj-big]
+		z-index: -1
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		overflow: hidden
+		background-color: #363852
+		[data-obj-big]
+			z-index: 1
+			opacity: 0.3 
+			filter: blur(30px)
+	&__inner
+		position: relative
+		z-index: 1
+	&__logo
+		font-size: 0
+		vertical-align: top
+		display: inline-block
+		img
+			max-width: 100%
+			display: block
+	&__description
+		margin: 10px 0 11px
+		font-size: 22px
+		font-weight: 500 
+		text-transform: uppercase
+
+.technologies
+	padding: 25px 0 50px
+	font-size: 0
+	&__list
+		text-align: center
+		+gpu
+	&__item
+		vertical-align: top
+		will-change: transform
+		display: inline-block
+		+hover
+			.technologies__icon .icon,
+			.technologies__name
+				transform: scale(1.15)
+		&:not(:first-child)
+			margin-left: 29px
+	&__icon
+		width: 65px
+		height: 65px
+		line-height: 65px
+		text-align: center
+		border-radius: 50%
+		background-color: $white 
+		display: block
+		.icon
+			position: relative
+			font-size: 25px
+			vertical-align: middle
+			transition: transform .2s ease-in-out
+			display: inline-block
+		.icon-design
+			font-size: 41px
+		.icon-prototype
+			font-size: 16px
+	&__name
+		margin-top: 3px
+		font-size: 14px
+		font-weight: 500 
+		max-width: 65px
+		transition: transform .2s ease-in-out
+		color: $white
+		display: block 
+
+.screenshots
+	padding: 57px 0 25px
+	font-size: 0
+	img
+		position: relative
+		max-width: 100%
+		display: block
+
+.task
+	padding: 20px 0
+	text-align: center
+	&__inner
+		margin: 0 auto 
+		max-width: 687px
+	&__title
+		margin-bottom: 18px
+
+.tabs
+	padding: 75px 0 50px
+	&__current
+		display: none
+	&__out
+	&__list
+		margin-bottom: 43px
+		text-align: center
+		font-size: 0
+	&__item
+		position: relative
+		padding: 15px 19px
+		font-size: 20px
+		font-weight: 5r 
+		cursor: pointer
+		user-select: none
+		border-radius: 10px 
+		transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out
+		border: 1px solid rgba($white, .1) 
+		vertical-align: top
+		display: inline-block
+		&:before
+			position: absolute
+			content: "" 
+			top: 100%
+			left: 50%
+			height: 44px
+			width: 1px
+			opacity: 0
+			transition: opacity .3s ease-in-out
+			background-color: rgba($white, .1)  
+		+hover
+			color: #242437 
+			border-color: $white
+			background-color: $white
+		&.is-active
+			color: #242437 
+			border-color: $white
+			background-color: $white
+			&:before
+				opacity: 1
+		&:not(:first-child)
+			margin-left: 40px
+	&__wrap
+		margin: 0 auto
+		max-width: 768px
+	&__container
+		padding: 20px 68px 10px 70px
+		max-width: 744px
+		border-radius: 10px 
+		border: 1px solid rgba($white, .1) 
+		&.is-active
+
+	&__text
+		padding: 30px 0 29px
+		line-height: 1.1
+		color: $white 
+		&:not(:last-child)
+			border-bottom: 1px solid rgba($white, .1) 
+
+.prototype,
+.sketch
+	text-align: center
+	&__title
+		margin-bottom: 18px
+	&__description
+		margin: 0 auto
+		max-width: 668px 
+	&__inner
+		margin: 0 auto
+		max-width: 720px
+	&__item
+		position: relative
+		&:not(:first-child)
+			margin-top: 34px
+	&__img
+		font-size: 0
+		img
+			max-width: 100%
+			display: block
+
+.prototype
+	padding: 55px 0 85px
+	&__list
+		margin-top: 83px
+.sketch
+	padding: 85px 0 110px
+	&__inner
+		max-width: 800px
+	&__list
+		margin-top: 124px
+	&__item
+		&:not(:first-child)
+			margin-top: 40px
+.themes
+	padding: 96px 0 45px
+	text-align: center
+	&__inner
+		margin: 0 auto
+		max-width: 994px 
+	&__title
+		margin-bottom: 15px
+	&__description
+		margin: 0 auto
+		max-width: 563px 
+		font-size: 16px
+		line-height: 1.9 
+	&__list
+		margin-top: 58px
+	&__item
+		position: relative
+		padding-left: 20px
+		text-align: left
+		+clr
+		&_right
+			text-align: right
+		&:not(:first-child)
+			margin-top: 40px
+	&__name
+		padding: 25px 33px
+		font-size: 21px
+		font-weight: 500 
+		vertical-align: top
+		border-radius: 15px 
+		background-color: #2B2B44 
+		display: inline-block
+		&_light
+			color: #2B2B44 
+			background-color: $white 
+	&__img
+		float: right
+		margin-top: 39px
+		padding-right: 174px
+		.themes__item_right &
+			margin-top: 22px
+			padding: 0 0 0 174px
+		img
+			max-width: 100%
+			display: block
+	&__line
+		position: absolute
+		top: 42px
+		left: 198px
+		right: 66px
+		bottom: 43px
+		border-top: 1px solid #22477B 
+		border-right: 1px solid #22477B 
+		border-top-right-radius: 35px 
+
+.moments
+	padding: 51px 0 90px 
+	text-align: center
+	&__inner
+		margin: 0 auto
+		max-width: 800px
+	&__title
+		margin-bottom: 14px
+	&__description
+		margin: 0 auto
+		max-width: 563px 
+		font-size: 16px
+		line-height: 1.875
+	&__video
+		width: 100%
+		height: 466px 
+		display: block
+		&:not(:first-child)
+			margin-top: 49px 
+.page-buttons
+	position: relative
+	z-index: 1
+	padding: 27px 0 30px
+	line-height: 65px
+	font-size: 0
+	text-align: center
+	&:before,
+	&:after
+		position: absolute
+		content: ""
+		left: 50%
+		margin-left: -57px
+		height: 1px
+		width: 115px
+		background-color: rgba($white, .1) 
+	&:before
+		top: 0
+	&:after
+		bottom: 0
+	.btn-prev,
+	.btn-next
+		vertical-align: top
+	&__text
+		margin: 0 17px
+		font-size: 24px
+		font-weight: 500 
+		color: $white 
+		vertical-align: middle
+		display: inline-block
+.f-form
+	position: relative
+	text-align: center
+	margin-top: -13px 
+	padding: 345px 0 257px
+	background-color: $white 
+	overflow: hidden
+	&:before
+		position: absolute
+		content: "" 
+		top: 0
+		left: 0
+		width: 0px
+		height: 0px
+		z-index: 1
+		border-style: solid
+		border-width: 355px 100vw 0 0
+		border-color: $darkBg transparent transparent transparent
+	.textarea
+		background-color: #F6F5F7 
+	&__triangle,
+	&__triangle-blur
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+	&__triangle
+		top: -60px
+		margin-left: -18px 
+		opacity: 0.1
+	&__triangle-blur
+		top: -125px
+		margin-left: 65px
+		transform: translateX(-50%) rotate(180deg)
+		filter: blur(8px)
+	&__inner
+		position: relative
+		z-index: 1
+		margin: 0 auto
+		padding: 0 15px
+		max-width: 402px 
+	&__title
+		font-size: 30px
+		font-weight: 300 
+		color: #3D3A41 
+	&__description
+		margin-bottom: 30px
+	&__email
+		color: #ACA1B7
+		font-size: 38px
+		font-weight: 500 

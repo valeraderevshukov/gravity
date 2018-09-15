@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="88.5895404%" x2="89.3299326%" y2="44.0384806%" id="linearGradient-1">
+            <stop stop-color="#3AC5E3" offset="0%"></stop>
+            <stop stop-color="#87E7C2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="City-Voice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-171.000000, -3364.000000)">
+            <path d="M181.5,3385 C175.70101,3385 171,3380.29899 171,3374.5 C171,3368.70101 175.70101,3364 181.5,3364 C187.29899,3364 192,3368.70101 192,3374.5 C192,3380.29899 187.29899,3385 181.5,3385 Z M181.499075,3382.60289 C185.993063,3382.60289 189.636159,3378.9598 189.636159,3374.46581 C189.636159,3369.97182 185.993063,3366.32872 181.499075,3366.32872 C177.005088,3366.32872 173.361991,3369.97182 173.361991,3374.46581 C173.361991,3378.9598 177.005088,3382.60289 181.499075,3382.60289 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

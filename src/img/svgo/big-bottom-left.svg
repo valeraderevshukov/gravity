@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="466px" height="316px" viewBox="0 0 466 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.94660433%" y1="100%" x2="41.2204724%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#4AE0FF" offset="0%"></stop>
+            <stop stop-color="#98FFF6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="City-Voice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-100.000000, -7419.000000)">
+            <g id="Group-2" transform="translate(79.000000, 5279.000000)" fill="url(#linearGradient-1)">
+                <g id="Group-3" transform="translate(21.000000, 2140.000000)">
+                    <path d="M233,0 L466,316 L0,316 L233,0 Z M233,64.5372425 L79.5287334,274.499208 L386.471267,274.499208 L233,64.5372425 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

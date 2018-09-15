@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="167px" height="167px" viewBox="0 0 167 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 3 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-14.9%" y="-14.9%" width="129.7%" height="129.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="6.23999997" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="City-Voice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-88.000000, -5262.000000)">
+            <g id="Group-2" transform="translate(79.000000, 5279.000000)" opacity="0.488054801" stroke="#657CE0" stroke-width="2.09663983">
+                <g id="Group-4" transform="translate(26.000000, 0.000000)">
+                    <circle id="Oval-3-Copy-2" filter="url(#filter-1)" cx="66.5" cy="66.5" r="66.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

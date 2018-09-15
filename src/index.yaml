@@ -5,3 +5,5 @@ PageList:
   ready: 100
 - file: home-mob.html
   ready: 100
+- file: cases.html
+  ready: 100

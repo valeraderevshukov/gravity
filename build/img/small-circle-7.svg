@@ -1,0 +1,22 @@
+<svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        Oval 3 Copy
+    </title>
+    <defs>
+        <linearGradient x1="2.447%" y1="2.31%" x2="99.601%" y2="94.021%" id="c">
+            <stop stop-color="#5AA9FC" offset="0%"/>
+            <stop stop-color="#6A6AD5" offset="100%"/>
+        </linearGradient>
+        <circle id="b" cx="409.5" cy="323.5" r="7.5"/>
+        <filter x="-126.7%" y="-60%" width="353.3%" height="406.7%" filterUnits="objectBoundingBox" id="a">
+            <feMorphology radius="5" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dy="18" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.121568627 0 0 0 0 0.541176471 0 0 0 0 1 0 0 0 0.2 0" in="shadowBlurOuter1"/>
+        </filter>
+    </defs>
+    <g transform="translate(-402 -316)" fill="none" fill-rule="evenodd">
+        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+        <use fill="url(#c)" xlink:href="#b"/>
+    </g>
+</svg>

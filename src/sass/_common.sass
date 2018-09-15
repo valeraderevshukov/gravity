@@ -2,11 +2,15 @@ body
 	font-family: $Futuras 
 	color: rgba($black, 0.5) 
 	+f(20px,500,1.5)
-	min-width: 1280px
+	min-width: 1260px
 	+font-smoothing
 	letter-spacing: 0
 	background-color: $white
-	
+	&.is-dark
+		color: rgba($white, .5) 
+		background-color: $darkBg
+		.title
+			color: $white 
 
 .title
 	font-family: $Futuras 
@@ -17,3 +21,8 @@ body
 .light
 	font-weight: 300 
 	
+.prev-head
+	margin-top: 60px
+
+.text-upper
+	text-transform: uppercase

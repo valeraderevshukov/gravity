@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="792px" height="537px" viewBox="0 0 792 537" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="61.2323812%" y1="23.9927521%" x2="21.4230707%" y2="73.9831534%" id="linearGradient-1">
+            <stop stop-color="#4AE0FF" offset="0%"></stop>
+            <stop stop-color="#98FFF6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="City-Voice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-615.000000, -43.000000)">
+            <path d="M1011,43 L1407,580 L615,580 L1011,43 Z M1011,152.672466 L750.164714,509.474919 L1271.83529,509.474919 L1011,152.672466 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

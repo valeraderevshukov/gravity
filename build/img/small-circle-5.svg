@@ -1,0 +1,11 @@
+<svg width="167" height="167" viewBox="0 0 167 167" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Oval 3 Copy 2
+    </title>
+    <defs>
+        <filter x="-14.9%" y="-14.9%" width="129.7%" height="129.7%" filterUnits="objectBoundingBox" id="a">
+            <feGaussianBlur stdDeviation="6.24" in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <circle filter="url(#a)" cx="66.5" cy="66.5" r="66.5" transform="translate(17 17)" opacity=".488" stroke="#657CE0" stroke-width="2.097" fill="none" fill-rule="evenodd"/>
+</svg>

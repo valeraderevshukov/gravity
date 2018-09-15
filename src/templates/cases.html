@@ -1,0 +1,437 @@
+---
+title: Cases
+classBody: 'is-dark no-min-width'
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	<!-- begin design -->
+	<div class="design">
+		<div class="design__inner inner-md">
+			<!-- begin prev-head -->
+			<div class="prev-head">
+				<a href="#" class="btn-prev">
+					<span class="btn-prev__icon">
+						{{ mixins.icon('arr-left') }}
+					</span>
+					<span class="btn-prev__text">К кейсам</span>
+				</a>
+			</div>
+			<!-- end prev-head -->
+			<!-- begin progect-info -->
+			<div class="progect-info">
+				<div data-obj-big="design-triangle">
+					<img src="./img/design-triangle.svg" alt="img" data-paroller-factor="0.09" data-paroller-type="foreground">
+				</div>
+				<div data-obj-big="design-circle">
+					<img src="./img/design-circle.svg" alt="img" data-paroller-factor="0.1" data-paroller-type="foreground">
+				</div>
+				<div data-obj-small="design-small-circle">
+					<img src="./img/design-small-circle.svg" alt="img" data-paroller-factor="0.05" data-paroller-type="foreground">
+				</div>
+				<div class="progect-info__bg">
+					<div data-obj-big="design-triangle">
+						<img src="./img/design-triangle.svg" alt="img" data-paroller-factor="0.09" data-paroller-type="foreground">
+					</div>
+					<div data-obj-big="design-circle">
+						<img src="./img/design-circle.svg" alt="img" data-paroller-factor="0.05" data-paroller-type="foreground">
+					</div>
+				</div>
+				<div class="progect-info__inner">
+					<h1 class="progect-info__logo"><img src="./img/logo-city.svg" alt="img"></h1>
+					<div class="progect-info__description">Restaurant & Karaoke Club</div>
+					<p>Премиум лаундж ресторан и караоке, расположенный в одной из башен ОКО в Московском международном деловом центре «Москва-Сити»</p>
+				</div>
+			</div>
+			<!-- end progect-info -->
+			<!-- begin technologies -->
+			<div class="technologies">
+				<ul class="technologies__list">
+					{% for item in [
+						{
+							icon: 'prototype',
+							name: 'Прототип'
+						},
+						{
+							icon: 'design',
+							name: 'Дизайн'
+						},
+						{
+							icon: 'code',
+							name: 'Front End'
+						},
+						{
+							icon: 'code',
+							name: 'Back End'
+						}
+					] %}
+					<li class="technologies__item">
+						<span class="technologies__icon">
+							{{ mixins.icon(item.icon) }}
+						</span>
+						<span class="technologies__name">{{ item.name }}</span>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<!-- end technologies -->
+		</div>
+		<!-- begin screenshots -->
+		<div class="screenshots">
+			<div class="screenshots__inner inner">
+				<img src="./img/screenshots.png" alt="screenshots" data-paroller-factor="0.1" data-paroller-type="foreground">
+			</div>
+		</div>
+		<!-- end screenshots -->
+		<div class="design__inner inner-md">
+			<!-- begin task -->
+			<div class="task">
+				<div class="task__inner">
+					<h3 class="task__title title text-upper">Задачи  и видение проекта</h3>
+					<p>Наша команда попала на проект незадолго до открытия заведения. Стояла задача создать сайт для караоке-бара с возможностью заказа доставки еды. В процессе обсуждения немного поменялась концепция - к караоке бару прибавилась концепция лаундж ресторана.</p>
+				</div>
+			</div>
+			<!-- end task -->
+			<!-- begin tabs -->
+			<div class="tabs" data-tabs>
+				<div class="tabs__current"><span data-tabs-current></span></div>
+				<div class="tabs__out">
+					<ul class="tabs__list">
+						{% for item in [
+							{
+								id: 'task',
+								text: 'Задачи'
+							},
+							{
+								id: 'audience',
+								text: 'Целевая аудитория'
+							},
+							{
+								id: 'product',
+								text: 'Продукт'
+							},
+							{
+								id: 'objective',
+								text: 'Цели'
+							}
+						] %}
+							<li class="tabs__item" data-tabs-control="{{ item.id }}">{{ item.text }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="tabs__wrap" data-tabs-wrapper>
+					{% for item in [
+						{
+							id: 'task',
+							containerList: [
+								{
+									text: 'Разработать яркий, интересный и запоминающийся дизайн проекта'
+								},
+								{
+									text: 'Разработать удобную и понятную навигацию сайта'
+								},
+								{
+									text: 'Разработать удобную и простую систему бронирования'
+								},
+								{
+									text: 'Проработать интерфейс под корпоративных клиентов'
+								},
+								{
+									text: 'Разработать интерфейс для заказа доставки еды внутри Москва-сити'
+								}
+							]
+						},
+						{
+							id: 'audience',
+							containerList: [
+								{
+									text: 'Разработать яркий, интересный и запоминающийся дизайн проекта'
+								},
+								{
+									text: 'Разработать удобную и понятную навигацию сайта'
+								},
+								{
+									text: 'Разработать удобную и простую систему бронирования'
+								}
+							]
+						},
+						{
+							id: 'product',
+							containerList: [
+								{
+									text: 'Разработать удобную и понятную навигацию сайта'
+								},
+								{
+									text: 'Разработать удобную и простую систему бронирования'
+								}
+							]
+						},
+						{
+							id: 'objective',
+							containerList: [
+								{
+									text: 'Разработать яркий, интересный и запоминающийся дизайн проекта'
+								},
+								{
+									text: 'Разработать удобную и понятную навигацию сайта'
+								},
+								{
+									text: 'Проработать интерфейс под корпоративных клиентов'
+								},
+								{
+									text: 'Разработать интерфейс для заказа доставки еды внутри Москва-сити'
+								}
+							]
+						}
+					] %}
+					<div class="tabs__container" data-tabs-container="{{ item.id }}">
+						{% for item in item.containerList %}
+							<div class="tabs__text">{{ item.text }}</div>
+						{% endfor %}
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end tabs -->
+			<!-- begin prototype -->
+			<div class="prototype">
+				<div class="prototype__inner">
+					<h3 class="prototype__title title text-upper">Прототип</h3>
+					<div class="prototype__description">
+						Премиум лаундж ресторан и караоке, расположенный в одной из башен ОКО в Московском международном деловом центре «Москва-Сити»
+					</div>
+					<div class="prototype__list">
+						{% for item in [
+							{
+								img: 'prototype-1',
+								objectsBig: [
+									{
+										position: 'top',
+										object: 'big-circle'
+									}
+								],
+								objectsSmall: [ 'small-triangle-1', 'small-circle-1']
+							},
+							{
+								img: 'prototype-2',
+								objectsBig: [
+									{
+										position: 'top-triangle',
+										object: 'big-triangle-top'
+									},
+									{
+										position: 'bottom-triangle',
+										object: 'big-triangle-bottom'
+									}
+								],
+								objectsSmall: [ 'small-circle-2', 'small-circle-3', 'small-triangle-2', 'small-circle-4']
+							}
+						] %}
+						<div class="prototype__item">
+							<div class="prototype__img">
+								<img src="./img/prototype/{{ item.img }}.jpg" alt="{{ item.img }}">
+							</div>
+							{% for obj in item.objectsBig %}
+								<div class="prototype__object" data-obj-big data-obj-big-position="{{ obj.position }}">
+									<img src="./img/{{ obj.object }}.svg" alt="{{ obj.object }}" data-paroller-factor="{{ [0.01,0.02,0.03] | random }}" data-paroller-type="foreground">
+								</div>
+							{% endfor %}
+							{% for obj in item.objectsSmall %}
+								<div class="prototype__object" data-obj-small="{{ obj }}">
+									<img src="./img/{{ obj }}.svg" alt="{{ obj }}" data-paroller-factor="{{ [0.05,0.06,0.07,0.08,0.09] | random }}" data-paroller-type="foreground">
+								</div>
+							{% endfor %}
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<!-- end prototype -->
+			<!-- begin sketch -->
+			<div class="sketch">
+				<div class="sketch__inner">
+					<h3 class="sketch__title title text-upper">Дизайн</h3>
+					<div class="sketch__description">
+						Премиум лаундж ресторан и караоке, расположенный в одной из башен ОКО в Московском международном деловом центре «Москва-Сити»
+					</div>
+					<div class="sketch__list">
+						{% for item in [
+							{
+								img: 'design-1',
+								objectsBig: [
+									{
+										position: 'top',
+										object: 'big-circle'
+									}
+								],
+								objectsSmall: [ 'small-circle-5', 'small-circle-6', 'small-circle-7', 'small-circle-11']
+							},
+							{
+								img: 'design-2',
+								objectsBig: [
+									{
+										position: 'bottom-right',
+										object: 'big-bottom-right'
+									}
+								],
+								objectsSmall: [ 'small-circle-8' ]
+							},
+							{
+								img: 'design-3'
+							},
+							{
+								img: 'design-4',
+								objectsBig: [
+									{
+										position: 'bottom-left',
+										object: 'big-bottom-left'
+									}
+								]
+							},
+							{
+								img: 'design-5',
+								objectsSmall: [ 'small-circle-9' ]
+							},
+							{
+								img: 'design-6',
+								objectsSmall: [ 'small-circle-10' ]
+							},
+							{
+								img: 'design-7',
+								objectsBig: [
+									{
+										position: 'bottom',
+										object: 'big-cicle-bottom'
+									}
+								]
+							}
+						] %}
+						<div class="sketch__item">
+							<div class="sketch__img">
+								<img src="./img/design/{{ item.img }}.png" alt="{{ item.img }}">
+							</div>
+							{% if item.objectsBig %}
+								{% for obj in item.objectsBig %}
+									<div class="sketch__object" data-obj-big data-obj-big-position="{{ obj.position }}">
+										<img src="./img/{{ obj.object }}.svg" alt="{{ obj.object }}" data-paroller-factor="{{ [0.01,0.02,0.03] | random }}" data-paroller-type="foreground">
+									</div>
+								{% endfor %}
+							{% endif %}
+							{% if item.objectsSmall %}
+								{% for obj in item.objectsSmall %}
+									<div class="sketch__object" data-obj-small="{{ obj }}">
+										<img src="./img/{{ obj }}.svg" alt="{{ obj }}" data-paroller-factor="{{ [0.05,0.06,0.07,0.08,0.09] | random }}" data-paroller-type="foreground">
+									</div>
+								{% endfor %}
+							{% endif %}
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<!-- end sketch -->
+			<!-- begin themes -->
+			<div class="themes">
+				<div class="themes__inner">
+					<h3 class="themes__title title">Темное/Светлое</h3>
+					<div class="themes__description">Страницы ресторана и караоке были обыграны с основным временем работы: днем - светлая страница ресторана и ночью - темная страница караоке</div>
+					<div class="themes__list">
+						<div class="themes__item">
+							<div class="themes__head">
+								<div class="themes__name">Темное</div>
+							</div>
+							<div class="themes__img">
+								<img src="./img/themes-1.png" alt="img">
+							</div>
+							<div class="themes__line"></div>
+						</div>
+						<div class="themes__item themes__item_right">
+							<div class="themes__head">
+								<div class="themes__name themes__name_light">Светлое</div>
+							</div>
+							<div class="themes__img">
+								<img src="./img/themes-2.png" alt="img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end themes -->
+		</div>
+	</div>
+	<!-- end design -->
+	<!-- begin moments -->
+	<div class="moments">
+		<div class="moments__inner">
+			<h3 class="moments__title title">Интересные моменты</h3>
+			<div class="moments__description">Возможность резерва с любой страницы сайта. Резерв внутри события заполняет дату и время события</div>
+			<video class="moments__video" autoplay muted loop>
+				<source src="video/Promo_clean-2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				Тег video не поддерживается вашим браузером. 
+				<a href="video/duel.mp4">Скачайте видео</a>.
+			</video>
+		</div>
+	</div>
+	<!-- end moments -->
+	<!-- begin page-buttons -->
+	<div class="page-buttons">
+		<!-- begin prev-head -->
+		<a href="#" class="btn-prev">
+			<span class="btn-prev__icon">
+				{{ mixins.icon('arr-left') }}
+			</span>
+		</a>
+		<div class="page-buttons__text">Сдедующий кейс</div>
+		<a href="#" class="btn-next">
+			<span class="btn-prev__icon">
+				{{ mixins.icon('arr-right') }}
+			</span>
+		</a>
+		<!-- end prev-head -->
+	</div>
+	<!-- end page-buttons -->
+	<!-- begin f-form -->
+	<div class="f-form">
+		<svg class="f-form__triangle" width="1071px" height="1071px" viewBox="0 0 1071 1071" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <polyline stroke="#ACA1B7" points="1 0 536 1071 1070.55411 0"></polyline>
+		    </g>
+		</svg>
+		<svg class="f-form__triangle-blur" width="1485px" height="1485px" viewBox="0 0 1071 1071" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <polyline stroke="#ACA1B7" points="1 0 536 1071 1070.55411 0"></polyline>
+		    </g>
+		</svg>
+		<div class="f-form__inner">
+			<h3 class="f-form__title">Get in touch</h3>
+			<div class="f-form__description">
+				<a href="mailto:hello@grvty.ru" class="f-form__email"><span class="light">hello@</span>grvty.ru</a>
+			</div>
+			<form class="f-form__form form" action="/">
+				<div class="form-control">
+					<input type="text" class="input" placeholder="Name">
+				</div>
+				<div class="form-control">
+					<input type="text" class="input" placeholder="Phone/Email/Skype/Telegram">
+				</div>
+				<div class="form-control">
+					<label for="textarea" class="label">
+						Tell us about your project
+					</label>
+					<textarea id="textarea" class="textarea"></textarea>
+				</div>
+				<div class="form-footer">
+					<button type="submit" class="btn js-form-submit">
+						Send
+						<svg class="btn__submit-check" width="65px" height="53px" viewBox="0 0 65 53" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+						        <polyline stroke="#fff" stroke-width="8" points="6 35.292483 18 47.292483 58.8073463 5.84066984"></polyline>
+						    </g>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end f-form -->
+{% endblock %}

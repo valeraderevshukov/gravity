@@ -11,7 +11,7 @@
     <link rel="stylesheet" media="all" href="css/app.css">
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
-  <body>
+  <body{% if classBody %} class="{{classBody}}"{% endif %}>
 
     <!-- BEGIN content -->
     <div class="out">

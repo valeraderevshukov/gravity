@@ -2,7 +2,16 @@
 	position: relative
 	overflow: hidden
 
-.inner
+.inner,
+.inner-md,
+.inner-sm
 	margin: 0 auto
 	max-width: $innerWidth
 	+clr
+
+.inner-md
+	padding: 0 15px
+	max-width: $innerWidthMd
+.inner-sm
+	padding: 0 15px
+	max-width: $innerWidthSm

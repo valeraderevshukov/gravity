@@ -1,0 +1,12 @@
+<svg width="792" height="537" viewBox="0 0 792 537" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Combined Shape
+    </title>
+    <defs>
+        <linearGradient x1="61.232%" y1="23.993%" x2="21.423%" y2="73.983%" id="a">
+            <stop stop-color="#4AE0FF" offset="0%"/>
+            <stop stop-color="#98FFF6" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <path d="M1011 43l396 537H615l396-537zm0 109.672L750.165 509.475h521.67L1011 152.672z" fill="url(#a)" transform="translate(-615 -43)" fill-rule="evenodd"/>
+</svg>

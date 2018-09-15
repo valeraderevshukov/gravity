@@ -2,8 +2,5 @@
     <title>
         Path 2
     </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="#A79BB2" d="M-695-936H745V88H-695z"/>
-        <path d="M2 2l22.492 23L49 2" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
+    <path d="M2 2l22.492 23L49 2" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd"/>
 </svg>
