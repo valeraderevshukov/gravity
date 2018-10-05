@@ -3,8 +3,14 @@
 	position: absolute
 	z-index: -1
 	user-select: none
+	// z-index: 10
 	img
 		position: relative
+
+// [data-obj-big]
+// 	img
+// 		+sm 
+// 			max-width: 100%	
 	
 [data-obj-big-position="top"],
 [data-obj-big-position="top-triangle"]
@@ -34,10 +40,14 @@
 	left: 100%
 	bottom: 100%
 	margin: 0 0 -279px -285px
+	// +sm 
+	// 	display: none
 [data-obj-big="design-circle"]
 	bottom: 100%
 	right: 100%
 	margin: 0 -409px -623px 0
+	+sm 
+		display: none
 [data-obj-small="design-small-circle"]
 	left: 56px
 	bottom: -214px

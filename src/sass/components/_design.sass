@@ -10,8 +10,11 @@
 	color: $white 
 	text-align: center
 	background-color: $darkBg
+	+sm 
+		padding: 50px
 	[data-obj-big]
 		z-index: -1
+
 	&__bg
 		position: absolute
 		top: 0
@@ -27,6 +30,9 @@
 	&__inner
 		position: relative
 		z-index: 1
+		p 
+			+sm 
+				font-size: 15px
 	&__logo
 		font-size: 0
 		vertical-align: top
@@ -39,6 +45,8 @@
 		font-size: 22px
 		font-weight: 500 
 		text-transform: uppercase
+		+sm 
+			font-size: 18px
 
 .technologies
 	padding: 25px 0 50px
@@ -50,10 +58,10 @@
 		vertical-align: top
 		will-change: transform
 		display: inline-block
-		+hover
-			.technologies__icon .icon,
-			.technologies__name
-				transform: scale(1.15)
+		// +hover
+		// 	.technologies__icon .icon,
+		// 	.technologies__name
+		// 		transform: scale(1.15)
 		&:not(:first-child)
 			margin-left: 29px
 	&__icon
@@ -86,6 +94,8 @@
 .screenshots
 	padding: 57px 0 25px
 	font-size: 0
+	+sm 
+		padding-top: 0
 	img
 		position: relative
 		max-width: 100%
@@ -102,18 +112,41 @@
 
 .tabs
 	padding: 75px 0 50px
+	position: relative
+	+sm 
+		padding: 40px 0
 	&__current
 		display: none
+		+sm 
+			display: block
 	&__out
 	&__list
 		margin-bottom: 43px
 		text-align: center
 		font-size: 0
+		+sm
+			opacity: 0
+			z-index: -1
+			position: absolute
+			left: 0
+			right: 0
+			top: 72px
+			// transform: translateX(-50%)
+			display: flex
+			flex-direction: column
+			background-color: rgba(#000, .9)
+			box-shadow: 0 6px 12px rgba(#000,.12)
+			margin: 0 15px
+			padding: 0
+			.is-open & 
+				opacity: 1
+				visibility: visible
+				z-index: 2
 	&__item
 		position: relative
 		padding: 15px 19px
 		font-size: 20px
-		font-weight: 5r 
+		font-weight: 500
 		cursor: pointer
 		user-select: none
 		border-radius: 10px 
@@ -121,6 +154,10 @@
 		border: 1px solid rgba($white, .1) 
 		vertical-align: top
 		display: inline-block
+		+sm 
+			border-radius: 0
+			width: 100%
+			padding: 10px 0
 		&:before
 			position: absolute
 			content: "" 
@@ -143,6 +180,8 @@
 				opacity: 1
 		&:not(:first-child)
 			margin-left: 40px
+			+sm 
+				margin-left: 0
 	&__wrap
 		margin: 0 auto
 		max-width: 768px
@@ -151,12 +190,15 @@
 		max-width: 744px
 		border-radius: 10px 
 		border: 1px solid rgba($white, .1) 
-		&.is-active
-
+		+sm 
+			padding: 10px 20px
+		
 	&__text
 		padding: 30px 0 29px
 		line-height: 1.1
 		color: $white 
+		+sm
+			padding: 14px 0
 		&:not(:last-child)
 			border-bottom: 1px solid rgba($white, .1) 
 
@@ -183,8 +225,12 @@
 
 .prototype
 	padding: 55px 0 85px
+	+sm 
+		padding: 40px 0
 	&__list
 		margin-top: 83px
+		+sm 
+			margin-top: 40px
 .sketch
 	padding: 85px 0 110px
 	&__inner
@@ -214,6 +260,8 @@
 		padding-left: 20px
 		text-align: left
 		+clr
+		+sm 
+			padding-left: 0
 		&_right
 			text-align: right
 		&:not(:first-child)
@@ -226,6 +274,8 @@
 		border-radius: 15px 
 		background-color: #2B2B44 
 		display: inline-block
+		+sm 
+			padding: 6px 24px
 		&_light
 			color: #2B2B44 
 			background-color: $white 
@@ -233,6 +283,11 @@
 		float: right
 		margin-top: 39px
 		padding-right: 174px
+		+sm 
+			padding-right: 85px
+		+xs 
+			padding-right: 45px
+			margin-top: 30px
 		.themes__item_right &
 			margin-top: 22px
 			padding: 0 0 0 174px
@@ -248,10 +303,17 @@
 		border-top: 1px solid #22477B 
 		border-right: 1px solid #22477B 
 		border-top-right-radius: 35px 
+		+sm 
+			right: 35px
+		+xs
+			right: 15px
+			left: 155px
 
 .moments
 	padding: 51px 0 90px 
 	text-align: center
+	+sm 
+		padding: 40px 0
 	&__inner
 		margin: 0 auto
 		max-width: 800px
@@ -266,6 +328,8 @@
 		width: 100%
 		height: 466px 
 		display: block
+		+sm 
+			height: auto
 		&:not(:first-child)
 			margin-top: 49px 
 .page-buttons
@@ -275,6 +339,8 @@
 	line-height: 65px
 	font-size: 0
 	text-align: center
+	+sm 
+		line-height: 40px
 	&:before,
 	&:after
 		position: absolute
@@ -305,6 +371,8 @@
 	padding: 345px 0 257px
 	background-color: $white 
 	overflow: hidden
+	+sm 
+		padding: 160px 0 80px
 	&:before
 		position: absolute
 		content: "" 
@@ -316,6 +384,8 @@
 		border-style: solid
 		border-width: 355px 100vw 0 0
 		border-color: $darkBg transparent transparent transparent
+		+sm 
+			border-width: 105px 100vw 0 0
 	.textarea
 		background-color: #F6F5F7 
 	&__triangle,
