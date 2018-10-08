@@ -21,20 +21,20 @@ classBody: 'is-dark no-min-width'
 			<!-- begin progect-info -->
 			<div class="progect-info">
 				<div data-obj-big="design-triangle">
-					<img src="./img/design-triangle.svg" alt="img" data-paroller-factor="-0.2" data-paroller-type="foreground">
+					<img src="./img/design-triangle.svg" alt="img" data-paroller-factor="0.1" data-paroller-type="foreground">
 				</div>
 				<div data-obj-big="design-circle">
-					<img src="./img/design-circle.svg" alt="img" data-paroller-factor="0.1" data-paroller-type="foreground">
+					<img src="./img/design-circle.svg" alt="img" data-paroller-factor="0.15" data-paroller-type="foreground">
 				</div>
 				<div data-obj-small="design-small-circle">
 					<img src="./img/design-small-circle.svg" alt="img" data-paroller-factor="-0.05" data-paroller-type="foreground">
 				</div>
 				<div class="progect-info__bg">
 					<div data-obj-big="design-triangle">
-						<img src="./img/design-triangle.svg" alt="img" data-paroller-factor="-0.2" data-paroller-type="foreground">
+						<img src="./img/design-triangle.svg" alt="img" data-paroller-factor="0.1" data-paroller-type="foreground">
 					</div>
 					<div data-obj-big="design-circle">
-						<img src="./img/design-circle.svg" alt="img" data-paroller-factor="0.1" data-paroller-type="foreground">
+						<img src="./img/design-circle.svg" alt="img" data-paroller-factor="0.15" data-paroller-type="foreground">
 					</div>
 				</div>
 				<div class="progect-info__inner">
@@ -94,7 +94,12 @@ classBody: 'is-dark no-min-width'
 			<!-- end task -->
 			<!-- begin tabs -->
 			<div class="tabs" data-tabs>
-				<div class="tabs__current"><span data-tabs-current></span></div>
+				<div class="tabs__current">
+					<span data-tabs-current></span>
+					<span class="tabs__icon">
+						{{mixins.icon('chevron-down')}}
+					</span>
+				</div>
 				<div class="tabs__out">
 					<ul class="tabs__list">
 						{% for item in [
@@ -228,7 +233,7 @@ classBody: 'is-dark no-min-width'
 									{
 										position: 'top-triangle',
 										object: 'big-triangle-top',
-										paroller: '0.05'
+										paroller: '0.1'
 
 									},
 									{
@@ -244,7 +249,7 @@ classBody: 'is-dark no-min-width'
                                     },
                                     {
                                         img: 'small-circle-3',
-                                        paroller: '0.3'
+                                        paroller: '0.5'
                                     },
                                     {
                                         img: 'small-triangle-2',
@@ -268,7 +273,7 @@ classBody: 'is-dark no-min-width'
 							{% endfor %}
 							{% for obj in item.objectsSmall %}
 								<div class="prototype__object" data-obj-small="{{ obj.img }}">
-									<img src="./img/{{ obj.img }}.svg" alt="{{ obj }}" data-paroller-factor="{{ obj.paroller }}" data-paroller-type="foreground">
+									<img src="./img/{{ obj.img }}.svg" alt="{{ obj.img }}" data-paroller-factor="{{ obj.paroller }}" data-paroller-type="foreground">
 								</div>
 							{% endfor %}
 						</div>
@@ -302,7 +307,7 @@ classBody: 'is-dark no-min-width'
                                     },
                                     {
                                         img: 'small-circle-6',
-                                        paroller: '0.1'
+                                        paroller: '0.3'
                                     },
                                     {
                                         img: 'small-circle-7',
@@ -320,7 +325,7 @@ classBody: 'is-dark no-min-width'
 									{
 										position: 'bottom-right',
 										object: 'big-bottom-right',
-                                        paroller: '-0.4'
+                                        paroller: '-0.1'
 									}
 								],
 								objectsSmall: [ 
@@ -358,7 +363,7 @@ classBody: 'is-dark no-min-width'
 								objectsSmall: [ 
                                     {
                                         img: 'small-circle-10',
-                                        paroller: '0.1'
+                                        paroller: '0.5'
                                     } 
                                 ]
 							},
@@ -368,7 +373,7 @@ classBody: 'is-dark no-min-width'
 									{
 										position: 'bottom',
 										object: 'big-cicle-bottom',
-                                        paroller: '0.2'
+                                        paroller: '0.09'
 									}
 								]
 							}
@@ -380,14 +385,14 @@ classBody: 'is-dark no-min-width'
 							{% if item.objectsBig %}
 								{% for obj in item.objectsBig %}
 									<div class="sketch__object" data-obj-big data-obj-big-position="{{ obj.position }}">
-										<img src="./img/{{ obj.object }}.svg" alt="{{ obj.object }}" data-paroller-factor="{{ [0.11,0.22,-0.13] | random }}" data-paroller-type="foreground">
+										<img src="./img/{{ obj.object }}.svg" alt="{{ obj.object }}" data-paroller-factor="{{ obj.paroller }}" data-paroller-type="foreground">
 									</div>
 								{% endfor %}
 							{% endif %}
 							{% if item.objectsSmall %}
 								{% for obj in item.objectsSmall %}
-									<div class="sketch__object" data-obj-small="{{ obj }}">
-										<img src="./img/{{ obj.img }}.svg" alt="{{ obj }}" data-paroller-factor="{{ obj.paroller }}" data-paroller-type="foreground">
+									<div class="sketch__object" data-obj-small="{{ obj.img }}">
+										<img src="./img/{{ obj.img }}.svg" alt="{{ obj.img }}" data-paroller-factor="{{ obj.paroller }}" data-paroller-type="foreground">
 									</div>
 								{% endfor %}
 							{% endif %}

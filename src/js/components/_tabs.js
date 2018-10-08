@@ -84,7 +84,7 @@ export default (() => {
           : this.cache.main.removeClass(OPEN);
       });
       BODY.on('click touchend', e => {
-        if ($(e.target).closest(this.cache.main).length || !this.cache.main.hasClass(OPEN)) return;
+        if ($(e.target).closest(this.cache.current).length ||!this.cache.main.hasClass(OPEN)) return;
         this.cache.main.removeClass(OPEN);
       });
     }
