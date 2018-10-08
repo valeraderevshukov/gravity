@@ -144,28 +144,28 @@
 		padding: 40px 0
 	+sm 
 		padding: 20px 0 20px
-	&__current
-		display: none
-		+sm 
-			vertical-align: top
-			display: inline-block
-			position: relative
-			padding: 10px 20px
-			width: 100%
-			line-height: 1.1
-			color: #242437 
-			background-color: $white
-			z-index: 10
-			cursor: pointer
-			margin-bottom: 10px
-			span 
+	&__current 
+		position: relative
+		[data-tabs-current]
+			display: none 
+			+sm 
 				display: block
+				padding: 10px 20px
+				width: 100%
+				line-height: 1.1
+				color: #242437 
+				background-color: $white
+				z-index: 10
+				cursor: pointer
+				margin-bottom: 10px
 	&__icon
 		position: absolute
 		right: 20px
 		top: 50%
 		transform: translateY(-50%)
+		font-size: 0
 		.icon
+			display: inline-block
 			font-size: 10px
 			transition: transform .2s linear
 			.is-open &
@@ -359,7 +359,7 @@
 		+md 
 			padding: 16px 33px
 		+sm 
-			padding: 6px 24px
+			padding: 10px 24px
 		&_light
 			color: #2B2B44 
 			background-color: $white 
@@ -368,15 +368,14 @@
 		margin-top: 39px
 		padding-right: 174px
 		+sm 
-			padding-right: 85px
-		+xs 
-			padding-right: 45px
-			margin-top: 30px
+			padding-right: 0
+			margin-top: 20px
 		.themes__item_right &
 			margin-top: 22px
 			padding: 0 0 0 174px
 			+sm 	
-				padding: 0 0 0 85px
+				padding: 0 
+				margin-top: 20px
 		img
 			max-width: 100%
 			display: block
@@ -390,10 +389,7 @@
 		border-right: 1px solid #22477B 
 		border-top-right-radius: 35px 
 		+sm 
-			right: 35px
-		+xs
-			right: 15px
-			left: 155px
+			display: none
 
 .moments
 	padding: 51px 0 90px 
