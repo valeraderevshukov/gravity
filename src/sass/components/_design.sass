@@ -453,6 +453,13 @@
 		color: $white 
 		vertical-align: middle
 		display: inline-block
+		.page-buttons_white &
+			color: $black-mine
+	&_white
+		&:before,
+		&:after
+			background-color: rgba($amethystSmoke, .3)
+
 .f-form
 	position: relative
 	text-align: center
@@ -475,6 +482,10 @@
 		border-color: $darkBg transparent transparent transparent
 		+sm 
 			border-width: 105px 100vw 0 0
+	&_white
+		margin-top: -145px
+		&:before
+			display: none
 	.textarea
 		background-color: #F6F5F7 
 	&__triangle,
