@@ -17,6 +17,7 @@
 		height: 100%
 		position: relative
 		&:after
+			transition: 1000ms
 			content: ''
 			width: 2px
 			height: 69px
@@ -24,17 +25,23 @@
 			position: absolute
 			bottom: 0
 			left: 50%
+		+md
+			&:after
+				height: 20px
 
 	&__bg
 		pointer-events: none
 		position: absolute
 
 	&__bg_line-out
+		transition: 1500ms
 		transform: rotate(-65deg)
 		left: -280px
 		bottom: 230px
 		width: 575px
 		height: 150px
+		+md
+			left: -330px
 
 	&__bg_line
 		transition: 1500ms
@@ -69,8 +76,11 @@
 		transition: 1500ms
 		opacity: 1
 		transform: rotate(-45deg)
+		+md
+			right: -400px
 
 	&__bg_circle
+		transition: 1500ms
 		bottom: -130px
 		right: -170px
 		.icon
@@ -83,8 +93,12 @@
 			transition: 1500ms
 			width: 260px
 			height: 260px
+		+md
+			bottom: -160px
+
 
 	&__bg_circle-lg
+		transition: 1500ms
 		top: -888px
 		left: -396px
 		.icon
@@ -97,14 +111,19 @@
 			transition: 1500ms
 			width: 1097px
 			height: 1097px
+		+md
+			left: -560px
 
 	&__bg_wave
+		transition: 1000ms
 		transform: translateX(-50%)
 		left: 50%
 		bottom: 83px
 		.icon
 			width: 80px
 			height: 7px
+		+md
+			bottom: 20px
 
 
 	&__logo
