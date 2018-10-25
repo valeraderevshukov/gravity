@@ -1,6 +1,114 @@
 .key-moments
 	position: relative
-	padding-top: 130px
-	z-index: 1
+	padding: 130px 0 103px
+	z-index: 2
+	&__inner
+		padding: 0 15px
 	&__title
 		text-align: center
+	&__bg-rect
+		position: absolute
+		top: 144px
+		right: -15px
+		width: 794px
+		height: 565px
+		background-color: rgba(#d8d8d8,.15)
+		z-index: -1
+	&__content
+		position: relative
+		margin-top: -15px
+	&__right
+		display: flex
+		justify-content: flex-end
+		padding-right: 10px
+	&__left
+		margin-top: 34px
+		padding-left: 233px
+		.key-moments__img
+			margin: 11px 0 0 -192px
+	&__section-text
+		margin-top: 210px
+		.key-moments__bot &
+			margin-top: 0
+			max-width: 531px
+	&__img
+		position: relative
+		width: 319px
+		height: 319px
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		border-radius: 2px
+		margin-left: 31px
+		box-shadow: 0 30px 64px 0 rgba(0,0,0,.2)
+		flex-shrink: 0
+		&-text
+			position: absolute
+			top: 14px
+			left: 17px
+			right: 16px
+			bottom: 41px
+			padding: 178px 37px 13px
+			border: 2px solid #bb9c70
+			text-align: center
+			font-size: 32px
+			.key-moments__img_lg &
+				top: 16px
+				left: 16px
+				right: 16px
+				bottom: 16px
+		&_lg
+			width: 720px
+			height: 340px
+			margin-left: 0
+	&__bot
+		position: relative
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding: 108px 202px 0 0
+	&__circle
+		position: absolute
+		left: 14px
+		top: -111px
+		width: 336px
+		height: 336px
+		border-radius: 50%
+		border: 60px solid rgba(#979797,.14)
+		z-index: -1
+	&__oval
+		position: absolute
+		height: 840px
+		top: -212px
+		overflow: hidden
+		right: 217px
+		z-index: -1
+		// width: 100%
+		// transform: rotate(79.5deg)
+		&-wrap
+			// transform: rotate(-79.5deg)
+		&-border
+			position: absolute
+			bottom: -360px
+			width: 562px
+			height: 1124px
+			transform: rotate(79.5deg)
+			border-right: 91px solid $white
+		img
+			display: block
+	&__music
+		position: relative
+		margin-left: 29px
+		audio
+			display: none
+
+
+.section-text
+	max-width: 690px
+	font-size: 24px
+	color: $black-mine
+	font-weight: 300
+	line-height: 1.46
+	&__title
+		color: $black-title
+		font-weight: 900

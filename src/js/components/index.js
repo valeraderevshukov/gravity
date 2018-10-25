@@ -5,3 +5,4 @@ import './_formSubmit';
 import './_tabs';
 import './_paralax';
 import './_video';
+import './_music';
