@@ -1,0 +1,129 @@
+.bamboo-header
+	overflow: hidden
+	position: relative
+	height: 880px
+	background: url("../img/case-bamboo-logo.png") center
+	background-size: cover
+
+	&__background-filter
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: rgba( #242437, 0.64)
+
+	&__inner
+		display: flex
+		flex-direction: column
+		height: 100%
+		position: relative
+		&:after
+			content: ''
+			width: 2px
+			height: 69px
+			background-color: rgba($white, 0.5)
+			position: absolute
+			bottom: 0
+			left: 50%
+
+	&__bg
+		pointer-events: none
+		position: absolute
+
+	&__bg_line-out
+		transform: rotate(-65deg)
+		left: -280px
+		bottom: 230px
+		width: 575px
+		height: 150px
+
+	&__bg_line
+		transition: 1500ms
+		right: 0
+		left: auto
+		position: absolute
+		background-color: rgba(#4B4B90, 0.44)
+		width: 0
+		height: 150px
+
+	&__bg_line-full
+		transition: 1500ms
+		left: 0
+		right: auto
+		position: absolute
+		background-color: rgba(#4B4B90, 0.44)
+		width: 575px
+		height: 150px
+
+	&__bg_half-circle
+		opacity: 0
+		transform-origin: 0 50%
+		transform: rotate(45deg)
+		top: 42px
+		right: -210px
+		.icon
+			fill: rgba(#9DD97A, 0.2)
+			width: 400px
+			height: 776px
+
+	&__bg_half-circle-full
+		transition: 1500ms
+		opacity: 1
+		transform: rotate(-45deg)
+
+	&__bg_circle
+		bottom: -130px
+		right: -170px
+		.icon
+			fill: rgba(#D3D9DD, 0.4)
+			width: 0
+			height: 0
+
+	&__bg_circle-full
+		.icon
+			transition: 1500ms
+			width: 260px
+			height: 260px
+
+	&__bg_circle-lg
+		top: -888px
+		left: -396px
+		.icon
+			fill: rgba(#D3D9DD, 0.2)
+			width: 0
+			height: 0
+
+	&__bg_circle-lg-full
+		.icon
+			transition: 1500ms
+			width: 1097px
+			height: 1097px
+
+	&__bg_wave
+		transform: translateX(-50%)
+		left: 50%
+		bottom: 83px
+		.icon
+			width: 80px
+			height: 7px
+
+
+	&__logo
+		transform: translateX(-50%)translateY(-50%)
+		position: absolute
+		top: 50.5%
+		left: 50%
+		.icon
+			width: 480px
+			height: 160px
+
+	&__prev
+		margin-top: 0
+		padding-top: 60px
+		.btn-prev__text
+			margin: 13px 0 0 18px
+
+	&__list-wrapper
+		margin: auto 85px 38px auto
+		.technologies__item:not(:first-child)
+			margin-left: 22px
+

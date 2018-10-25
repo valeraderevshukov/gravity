@@ -1,0 +1,48 @@
+{% import "data/bamboo-header-data.html" as data %}
+<section class="bamboo-header">
+  <div class="bamboo-header__background-filter"></div>
+  <div class="bamboo-header__inner inner inner-md">
+
+    <div class="bamboo-header__bg bamboo-header__bg_line-out ">
+      <div class="bamboo-header__bg_line js-anim-line-scale"></div>
+    </div>
+    <div class="bamboo-header__bg bamboo-header__bg_half-circle js-anim-rotate">
+      {{ mixins.icon('half-circle') }}
+    </div>
+    <div class="bamboo-header__bg bamboo-header__bg_circle js-anim-circle-scale">
+      {{ mixins.icon('circle') }}
+    </div>
+    <div class="bamboo-header__bg bamboo-header__bg_circle-lg js-anim-circle-lg-scale">
+      {{ mixins.icon('circle') }}
+    </div>
+    <div class="bamboo-header__bg bamboo-header__bg_wave">
+      {{ mixins.icon('wave') }}
+    </div>
+    <div class="bamboo-header__logo">
+      {{ mixins.icon('bamboo-logo') }}
+    </div>
+
+    <div class="bamboo-header__prev prev-head">
+      <a href="#" class="btn-prev btn-prev_white btn-prev_white">
+					<span class="btn-prev__icon">
+						{{ mixins.icon('arr-left') }}
+					</span>
+        <span class="btn-prev__text">К кейсам</span>
+      </a>
+    </div>
+
+    <div class="bamboo-header__list-wrapper">
+      <ul class="technologies__list">
+        {% for item in data.list %}
+          <li class="technologies__item">
+						<span class="technologies__icon">
+							{{ mixins.icon(item.icon) }}
+						</span>
+            <span class="technologies__name">{{ item.name }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</section>
