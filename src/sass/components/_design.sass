@@ -456,6 +456,7 @@
 		.page-buttons_white &
 			color: $black-mine
 	&_white
+		z-index: 2
 		&:before,
 		&:after
 			background-color: rgba($amethystSmoke, .3)
@@ -485,7 +486,7 @@
 	&_white
 		margin-top: -145px
 		&:before
-			display: none
+			border-color: $white transparent transparent transparent
 	.textarea
 		background-color: #F6F5F7 
 	&__triangle,
