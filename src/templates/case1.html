@@ -12,68 +12,75 @@ classBody: 'no-min-width'
   <!-- begin bamboo-tasks -->
   {% include "./partials/_bamboo-tasks.html" %}
   <!-- end bamboo-tasks -->
-	<!-- begin moments -->
-	{% include "./partials/_key-moments.html" %}
-	<!-- end moments -->
-	<!-- begin page-buttons -->
-	<div class="page-buttons page-buttons_white">
-		<!-- begin prev-head -->
-		<a href="#" class="btn-prev">
+  <!-- begin bamboo-design -->
+  {% include "./partials/_bamboo-design.html" %}
+  <!-- end bamboo-design -->
+  <!-- begin moments -->
+  {% include "./partials/_key-moments.html" %}
+  <!-- end moments -->
+  <!-- begin page-buttons -->
+  <div class="page-buttons page-buttons_white">
+    <!-- begin prev-head -->
+    <a href="#" class="btn-prev">
 			<span class="btn-prev__icon">
 				{{ mixins.icon('arr-left') }}
 			</span>
-		</a>
-		<div class="page-buttons__text">Сдедующий кейс</div>
-		<a href="#" class="btn-next">
+    </a>
+    <div class="page-buttons__text">Сдедующий кейс</div>
+    <a href="#" class="btn-next">
 			<span class="btn-prev__icon">
 				{{ mixins.icon('arr-right') }}
 			</span>
-		</a>
-		<!-- end prev-head -->
-	</div>
-	<!-- end page-buttons -->
-	<!-- begin f-form -->
-	<div class="f-form f-form_white">
-		<svg class="f-form__triangle" width="1071px" height="1071px" viewBox="0 0 1071 1071" version="1.1" xmlns="http://www.w3.org/2000/svg">
-			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				<polyline stroke="#ACA1B7" points="1 0 536 1071 1070.55411 0"></polyline>
-			</g>
-		</svg>
-		<svg class="f-form__triangle-blur" width="1485px" height="1485px" viewBox="0 0 1071 1071" version="1.1" xmlns="http://www.w3.org/2000/svg">
-			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				<polyline stroke="#ACA1B7" points="1 0 536 1071 1070.55411 0"></polyline>
-			</g>
-		</svg>
-		<div class="f-form__inner">
-			<h3 class="f-form__title">Get in touch</h3>
-			<div class="f-form__description">
-				<a href="mailto:hello@grvty.ru" class="f-form__email"><span class="light">hello@</span>grvty.ru</a>
-			</div>
-			<form class="f-form__form form" action="/">
-				<div class="form-control">
-					<input type="text" class="input" placeholder="Name">
-				</div>
-				<div class="form-control">
-					<input type="text" class="input" placeholder="Phone/Email/Skype/Telegram">
-				</div>
-				<div class="form-control">
-					<label for="textarea" class="label">
-						Tell us about your project
-					</label>
-					<textarea id="textarea" class="textarea"></textarea>
-				</div>
-				<div class="form-footer">
-					<button type="submit" class="btn js-form-submit">
-						Send
-						<svg class="btn__submit-check" width="65px" height="53px" viewBox="0 0 65 53" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-								<polyline stroke="#fff" stroke-width="8" points="6 35.292483 18 47.292483 58.8073463 5.84066984"></polyline>
-							</g>
-						</svg>
-					</button>
-				</div>
-			</form>
-		</div>
-	</div>
-	<!-- end f-form -->
+    </a>
+    <!-- end prev-head -->
+  </div>
+  <!-- end page-buttons -->
+  <!-- begin f-form -->
+  <div class="f-form f-form_white">
+    <svg class="f-form__triangle" width="1071px" height="1071px" viewBox="0 0 1071 1071" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline stroke="#ACA1B7" points="1 0 536 1071 1070.55411 0"></polyline>
+      </g>
+    </svg>
+    <svg class="f-form__triangle-blur" width="1485px" height="1485px" viewBox="0 0 1071 1071" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline stroke="#ACA1B7" points="1 0 536 1071 1070.55411 0"></polyline>
+      </g>
+    </svg>
+    <div class="f-form__inner">
+      <h3 class="f-form__title">Get in touch</h3>
+      <div class="f-form__description">
+        <a href="mailto:hello@grvty.ru" class="f-form__email"><span class="light">hello@</span>grvty.ru</a>
+      </div>
+      <form class="f-form__form form" action="/">
+        <div class="form-control">
+          <input type="text" class="input" placeholder="Name">
+        </div>
+        <div class="form-control">
+          <input type="text" class="input" placeholder="Phone/Email/Skype/Telegram">
+        </div>
+        <div class="form-control">
+          <label for="textarea" class="label">
+            Tell us about your project
+          </label>
+          <textarea id="textarea" class="textarea"></textarea>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn js-form-submit">
+            Send
+            <svg class="btn__submit-check" width="65px" height="53px" viewBox="0 0 65 53" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                <polyline stroke="#fff" stroke-width="8"
+                          points="6 35.292483 18 47.292483 58.8073463 5.84066984"></polyline>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- end f-form -->
 {% endblock %}

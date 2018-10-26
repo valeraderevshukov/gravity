@@ -1,0 +1,60 @@
+.bamboo-design
+	position: relative
+	z-index: 2
+	margin-top: 108px
+	padding-top: 100px
+	+md
+		margin-top: 80px
+		padding-top: 10%
+	&__inner
+		position: relative
+		padding: 0 15px
+	&__title
+		text-align: center
+	&__plate
+		position: absolute
+		width: 708px
+		height: 708px
+		left: -301px
+		top: -368px
+		+md
+			display: none
+		img
+			display: block
+			max-width: 100%
+	&__content
+		position: relative
+		margin-top: 104px
+		display: flex
+		justify-content: flex-end
+		+md
+			flex-direction: column-reverse
+			align-items: center
+			padding: 0 10px
+			margin-top: 46px
+	&__left
+		margin-top: 137px
+		+md
+			margin-top: 32px
+	&__right
+		margin-left: 119px
+		+md
+			margin-left: 0
+	&__left,
+	&__right
+		max-width: 555px
+	&__img
+		box-shadow: 0 8px 36px 0 rgba(0, 0, 0, 0.2)
+		img
+			display: block
+			max-width: 100%
+	&__rect
+		position: absolute
+		top: 194px
+		left: 0
+		right: 0
+		height: 608px
+		background-color: #d3d9dd
+		z-index: -1
+		+md
+			top: 176px
