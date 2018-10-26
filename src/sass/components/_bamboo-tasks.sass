@@ -1,0 +1,165 @@
+.bamboo-tasks
+	position: relative
+	margin-top: 146px
+	margin-bottom: 60px
+	+sm
+		min-width: 320px
+		margin-top: 100px
+
+
+	&__inner
+		position: relative
+
+	&__title
+		top: -40px
+		+sm
+			top: -24px
+			font-weight: 800
+
+	&__text-block
+		font-size: 24px
+		color: $black-mine
+		font-weight: 300
+		line-height: 1.475
+		+sm
+			padding: 0 20px
+
+	&__text-task
+		max-width: 690px
+		margin: 0 auto
+		padding-top: 48px
+		+sm
+			padding-top: 0
+
+	&__text-concept
+		max-width: 690px
+		margin: 374px 0 0 200px
+		+sm
+			margin: 260px 0 0 0
+
+	&__text-bold
+		font-weight: 900
+		color: $black-title
+
+	&__big-picture
+		position: relative
+		display: flex
+		justify-content: flex-end
+		margin-top: 66px
+		+sm
+			margin-top: 31px
+
+	&__pictures
+		position: relative
+		display: flex
+		margin-top: 72px
+		+sm
+			flex-direction: column
+			margin-top: 24px
+
+	&__image
+		box-shadow: 0 32px 32px 0 rgba($black, 0.15)
+
+	&__image-lg
+		width: 100%
+		max-width: 1024px
+		align-self: center
+
+	&__image-md
+		max-width: 690px
+		width: 50%
+		align-self: flex-start
+		+sm
+			width: 72.8%
+			min-height: 223px
+			object-fit: cover
+
+	&__image-sm
+		width: 50%
+		max-width: 510px
+		margin-top: 190px
+		margin-left: 71px
+		align-self: flex-end
+		+sm
+			min-height: 240px
+			width: 65.6%
+			margin-left: 0
+			object-fit: cover
+			margin-top: 24px
+
+	&__dish
+		transition: 1500ms
+		position: absolute
+		width: 640px
+		height: 640px
+		background: url("../img/case1/bamboo-dish-1.png") no-repeat center
+		right:  -175px
+		top: 126px
+		z-index: 1
+		+r(1300)
+			right: -300px
+		+r(1000)
+			right: -400px
+		+sm
+			right: -1000px
+
+	&__rectangle
+		transition: 1500ms
+		position: absolute
+		width: 1024px
+		height: 644px
+		border: 58px rgba(#9dd97a, 0.26) solid
+		left: 6.25%
+		top: 552px
+		&:after
+			content: ''
+			position: absolute
+			width: 2px
+			height: 68px
+			background-color: rgba(#9dd97a, 0.26)
+			top: -126px
+			left: 63%
+		+sm
+			left: auto
+			top: 765px
+			width: 320px
+			height: 728px
+			border-width: 40px
+			border-left: none
+			&:after
+				top: -111px
+				left: 57%
+
+
+	&__circle
+		transition: 1500ms
+		position: absolute
+		width: 420px
+		height: 420px
+		border: 70px rgba($dark, 0.1) solid
+		border-radius: 50%
+		bottom: 453px
+		left: -70px
+		+sm
+			border-width: 50px
+			width: 300px
+			height: 300px
+			left: -130px
+			bottom: 153px
+
+	&__wave
+		transition: 1500ms
+		position: absolute
+		bottom: -60px
+		right: 0
+		.icon
+			transition: 1500ms
+			width: 424px
+			height: 106px
+		+sm
+			bottom: -56px
+			right: -18px
+			.icon
+				width: 210px
+				height: 64px
+
