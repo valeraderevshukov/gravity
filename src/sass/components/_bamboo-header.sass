@@ -1,20 +1,34 @@
 .bamboo-header
+	transition: 1500ms
 	overflow: hidden
 	position: relative
-	height: 880px
-	background: url("../img/case-bamboo-logo.png") center
-	background-size: cover
+	min-height: 880px
+	min-width: 320px
+	+sm
+		min-height: 480px
 
-	&__background-filter
+	&__background-image
+		transition: 1500ms
+		overflow: hidden
 		position: absolute
 		width: 100%
-		height: 100%
-		background-color: rgba( #242437, 0.64)
+		height: 880px
+		background: url("../img/case1/case-bamboo-logo.png") center
+		background-size: cover
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: rgba( #242437, 0.64)
+		+sm
+			height: 480px
 
-	&__inner
+	&__inner-top
+		transition: 1500ms
 		display: flex
 		flex-direction: column
-		height: 100%
+		height: 880px
 		position: relative
 		&:after
 			transition: 1000ms
@@ -28,6 +42,19 @@
 		+md
 			&:after
 				height: 20px
+		+sm
+			height: 480px
+			&:after
+				height: 68px
+
+	&__inner-bottom
+		transition: 1500ms
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		+sm
+			position: relative
 
 	&__bg
 		pointer-events: none
@@ -42,24 +69,30 @@
 		height: 150px
 		+md
 			left: -330px
+		+sm
+			width: 275px
+			height: 78px
+			left: -124px
+			bottom: 0
 
 	&__bg_line
-		transition: 1500ms
+		transition: 1000ms
 		right: 0
 		left: auto
 		position: absolute
 		background-color: rgba(#4B4B90, 0.44)
 		width: 0
 		height: 150px
+		+sm
+			height: 78px
 
 	&__bg_line-full
-		transition: 1500ms
 		left: 0
 		right: auto
-		position: absolute
-		background-color: rgba(#4B4B90, 0.44)
 		width: 575px
-		height: 150px
+		+sm
+			width: 275px
+			height: 78px
 
 	&__bg_half-circle
 		opacity: 0
@@ -68,6 +101,7 @@
 		top: 42px
 		right: -210px
 		.icon
+			transition: 1500ms
 			fill: rgba(#9DD97A, 0.2)
 			width: 400px
 			height: 776px
@@ -78,6 +112,12 @@
 		transform: rotate(-45deg)
 		+md
 			right: -400px
+		+sm
+			top: 80px
+			right: -92px
+			.icon
+				width: 150px
+				height: 300px
 
 	&__bg_circle
 		transition: 1500ms
@@ -95,6 +135,12 @@
 			height: 260px
 		+md
 			bottom: -160px
+		+sm
+			right: -62px
+			bottom: -94px
+			.icon
+				width: 130px
+				height: 130px
 
 
 	&__bg_circle-lg
@@ -113,6 +159,8 @@
 			height: 1097px
 		+md
 			left: -560px
+		+sm
+			left: -1000px
 
 	&__bg_wave
 		transition: 1000ms
@@ -124,25 +172,86 @@
 			height: 7px
 		+md
 			bottom: 20px
+		+sm
+			bottom: 55px
 
 
 	&__logo
+		transition: 1500ms
 		transform: translateX(-50%)translateY(-50%)
 		position: absolute
 		top: 50.5%
 		left: 50%
 		.icon
+			transition: 1500ms
 			width: 480px
 			height: 160px
+		+sm
+			top: 55%
+			.icon
+				width: 279px
+				height: 93px
+
 
 	&__prev
+		position: relative
 		margin-top: 0
 		padding-top: 60px
 		.btn-prev__text
 			margin: 13px 0 0 18px
+		+sm
+			.btn-prev__text
+				margin: 0 0 0 18px
 
 	&__list-wrapper
+		display: flex
+		justify-content: flex-end
 		margin: auto 85px 38px auto
 		.technologies__item:not(:first-child)
 			margin-left: 22px
+		+sm
+			margin: 14px 0 0
+			left: 0
+			right: 0
+			justify-content: center
+
+	&__list
+		display: flex
+		+sm
+			flex-wrap: wrap
+
+	&__item
+		display: flex
+		flex-direction: column
+		margin-left: 28px
+		+sm
+			align-items: center
+			width: 50%
+			margin: 26px 0 0
+
+
+	&__icon
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: $white
+		width: 64px
+		height: 64px
+		border-radius: 50%
+		.icon
+			width: 32px
+			height: 32px
+		+sm
+			box-sizing: border-box
+			border: 2px $dark solid
+
+	&__name
+		font-family: $Futuras
+		font-weight: 500
+		color: $white
+		font-size: 14px
+		text-align: center
+		+sm
+			color: $dark
+
 
