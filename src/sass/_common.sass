@@ -21,11 +21,15 @@ body
 	+css-lock(21,30,1024,1440)
 	&_bold
 		font-weight: 900
+		font-size: 30px
+		+md
+			font-size: 30px
 .title-bg
 	font-family: $Futuras 
-	+f(280px,500,1)
+	font-weight: 700
+	line-height: 1
+	font-size: 280px
 	color: rgba($black-mine,.03)
-	+css-lock(196,280,1024,1440)
 	position: absolute
 	text-transform: uppercase
 	text-align: center
@@ -33,6 +37,8 @@ body
 	left: 0
 	right: 0
 	top: 0
+	+r(1440)
+		font-size: calc(64px + (280 - 64)*((100vw - 320px)/(1440 - 320)))
 
 .title-roboto
 	font-family: $Roboto
@@ -41,6 +47,8 @@ body
 	line-height: 1.2
 	text-transform: uppercase
 	color: #d0b560
+	+sm
+		font-size: 36px
 
 
 .light
