@@ -26,7 +26,7 @@ body
 			font-size: 30px
 .title-bg
 	font-family: $Futuras 
-	font-weight: 700
+	font-weight: 500
 	line-height: 1
 	font-size: 280px
 	color: rgba($black-mine,.03)
@@ -39,6 +39,12 @@ body
 	top: 0
 	+r(1440)
 		font-size: calc(64px + (280 - 64)*((100vw - 320px)/(1440 - 320)))
+	+sm
+		font-weight: 700
+	&_lg
+		+r(1440)
+			font-size: calc(80px + (280 - 64)*((100vw - 320px)/(1440 - 320)))
+
 
 .title-roboto
 	font-family: $Roboto
