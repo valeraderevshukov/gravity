@@ -1,7 +1,7 @@
 .bamboo-design
 	position: relative
 	z-index: 2
-	margin-top: 108px
+	margin-top: 30px
 	padding-top: 100px
 	+md
 		margin-top: 80px
@@ -15,8 +15,8 @@
 		position: absolute
 		width: 708px
 		height: 708px
-		left: -301px
-		top: -368px
+		left: -235px
+		top: -355px
 		+md
 			display: none
 		img
@@ -27,6 +27,7 @@
 		margin-top: 104px
 		display: flex
 		justify-content: flex-end
+		align-items: flex-start
 		+md
 			flex-direction: column-reverse
 			align-items: center
@@ -34,15 +35,20 @@
 			margin-top: 46px
 	&__left
 		margin-top: 137px
+		max-width: 580px
 		+md
 			margin-top: 32px
 	&__right
-		margin-left: 119px
+		margin-left: 83px
+		margin-right: -36px
+		max-width: 652px
+		position: relative
 		+md
-			margin-left: 0
-	&__left,
-	&__right
-		max-width: 555px
+			margin-left: -36px
+			margin-right: -36px
+	&__wrap
+		padding: 0 36px 0
+		overflow: hidden
 	&__img
 		box-shadow: 0 8px 36px 0 rgba(0, 0, 0, 0.2)
 		img
@@ -50,11 +56,17 @@
 			max-width: 100%
 	&__rect
 		position: absolute
-		top: 194px
-		left: 0
-		right: 0
-		height: 608px
+		top: 195px
+		width: 100vw
+		right: 36px
+		bottom: 0
 		background-color: #d3d9dd
 		z-index: -1
 		+md
 			top: 176px
+			right: auto
+			left: 50%
+			transform: translateX(-50%)
+			width: 200vw
+
+
