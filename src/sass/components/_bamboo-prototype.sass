@@ -1,10 +1,15 @@
 .bamboo-prototype
 	position: relative
 	padding: 132px 0 40px
+	margin-top: 36px
+	+sm
+		padding-bottom: 29px
 	.title-bg
 		top: 40px
 		+sm
 			top: 90px
+	&__inner
+		position: relative
 	&__title
 		text-align: center
 	&__content
@@ -25,7 +30,49 @@
 		+sm
 			top: 21px
 			bottom: -29px
-
+	&__circle,
+	&__wave,
+	&__bagel
+		position: absolute
+	&__circle
+		width: 1097px
+		height: 1097px
+		border-radius: 50%
+		background-color: rgba(#d3d9dd,.2)
+		top: -115px
+		left: -286px
+		+md
+			top: 18px
+			left: -580px
+			width: 900px
+			height: 900px
+		&_small
+			width: 276px
+			height: 276px
+			left: 179px
+			top: 50%
+			+md
+				display: none
+	&__wave
+		font-size: 126px
+		bottom: 699px
+		left: -286px
+		+md
+			display: none
+		.icon
+			display: block
+	&__bagel
+		top: 745px
+		right: -150px
+		+md
+			// width: 320px
+			top: auto
+			right: -30px
+			left: 95px
+			bottom: -170px
+		img
+			display: block
+			max-width: 100%
 
 .bamboo-divider
 	position: absolute
