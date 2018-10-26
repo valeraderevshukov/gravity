@@ -34,31 +34,20 @@ body
 	text-transform: uppercase
 	text-align: center
 	z-index: -1
-	left: 0
-	right: 0
+	right: 50%
+	transform: translateX(50%)
 	top: 0
 	+r(1440)
 		font-size: calc(64px + (280 - 64)*((100vw - 320px)/(1440 - 320)))
 	+sm
 		font-weight: 700
 	&_big
-		font-size: 280px
 		+r(1440)
-			font-size: calc(80px + (280 - 80)*((100vw - 320px)/(1440 - 320)))
-
-
-.title-bg_lg
-	font-family: $Futuras
-	+f(340px,500,1)
-	color: rgba($black-mine,.03)
-	+css-lock(64,340, 320, 1440)
-	position: absolute
-	text-transform: uppercase
-	text-align: center
-	z-index: -1
-	left: 0
-	right: 0
-	top: 0
+			font-size: calc(72px + (280 - 64)*((100vw - 320px)/(1440 - 320)))
+	&_xlg
+		font-size: 340px
+		+r(1440)
+			font-size: calc(72px + (340 - 72)*((100vw - 320px)/(1440 - 320)))
 
 .title-roboto
 	font-family: $Roboto
