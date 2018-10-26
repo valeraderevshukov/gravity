@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   window.setInterval(function() {
     line.toggleClass('bamboo-header__bg_line-full');
-  }, 1500);
+  }, 1000);
 
 
 });
