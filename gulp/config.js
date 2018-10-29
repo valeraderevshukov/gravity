@@ -27,7 +27,8 @@ var config = {
         iconsFont    : 'src/icons',
         fonts        : 'src/fonts',
         lib          : 'src/lib',
-        video        : 'src/video'
+        video        : 'src/video',
+        audio        : 'src/audio'
     },
     dest: {
         root : destPath,
@@ -37,7 +38,8 @@ var config = {
         img  : destPath + '/img',
         fonts: destPath + '/fonts',
         lib  : destPath + '/lib',
-        video: destPath + '/video'
+        video: destPath + '/video',
+        audio: destPath + '/audio'
     },
 
     setEnv: function(env) {
